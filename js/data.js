@@ -74,35 +74,28 @@ const qnaList = [
 const infoList = [
   {
     from: 0,
-    to: 9,
+    to: 10,
     mLeft: '10%',
     name: '채권 몰빵형',
-    desc: '주식 100% 몰빵 포트폴리오'
+    desc: '채권 100% 몰빵 포트폴리오'
   },
   {
-    from: 10,
-    to: 24,
+    from: 11,
+    to: 54,
     mLeft: '30%',
     name: '채권혼합형',
     desc: '60:40(채권:주식) 포트폴리오'
   },
   {
-    from: 25,
-    to: 30,
-    mLeft: '50%',
-    name: '뭐든지 반반형',
-    desc: '50:50(채권:주식) 포트폴리오'
-  },
-  {
-    from: 31,
-    to: 44,
+    from: 55,
+    to: 89,
     mLeft: '70%',
     name: '주식혼합형',
     desc: '40:60(채권:주식) 포트폴리오'
   },
   {
-    from: 45,
-    to: 50,
+    from: 90,
+    to: 100,
     mLeft: '90%',
     name: '주식 몰빵형',
     desc: '주식 100% 몰빵 포트폴리오'
