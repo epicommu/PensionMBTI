@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="author" content="Dain Kim">
+
+  <meta name="keywords" content="투자성향테스트, 나의 투자 MBTI, Investment_MBTI_test, 나만의 포트폴리오">
+  <meta name="description" content="투자성향테스트: 나의 투자 MBTI">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="나의 투자 MBTI">
+  <meta property="og:description" content="나의 최적 포트폴리오는?">
+  <meta property="og:image" content="img/og-logo.jpg">
+  <meta property="og:url" content="https://lymin0109.github.io/financial_MBTI_test/">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" type="text/css" href="img/favicon.png">
+  <link rel="appel-touch-icon-precomposed" href="img/favicon.png">
+  <title>
+    나의 투자 MBTI
+  </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header+footer.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/qna.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <link rel="stylesheet" href="css/result.css">
+  <!--[if lt ie 11]> 
+    <script>
+      alert('IE 11 미만 브라우저에서는 정상적으로 동작하지 않습니다.\n다른 브라우저(크롬, 파이어폭스 등)를 이용해주세요.');
+    </script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <button class="logo head" onclick=javascript:switchMode()></button>
+    </header>
+    <section id="welcome" class="container">
+      <div id="title-box">
+        <h1 class="title">
+          What's<br>
+          My Best Portfolio?
+        </h1>
+        <h3 class="sec-tit">
+          10가지 질문으로<br>
+          알아보는 내 투자성향
+        </h3>
+        <span class="time-logo"></span>
+        <div>소요 시간 : 3분 내외</div>
+      </div>
+      <hr class="w-line">
+      <p class="w-line">
+        <span id="p-tit">이 테스트로 당신은...</span><br>
+        본인만의 투자 포트폴리오를 만들 수 있습니다.<br>
+        투자 시작 전 본인의 위험성향, 목표 수익률을 인지하는 것은
+        성공적인 투자를 위해 필수적입니다.<br>
+        테스트 결과로 당신의 투자성향을 알아보세요!
+      </p>
+      <hr class="w-line">
+      <div id="name-input">
+        <input type="text" placeholder="이름" autofocus>
+      </div>
+      <p class="check-name warning"></p>
+      <div class="start-wrap">
+        <button class="start">시 작</button>
+      </div>
+    </section>
+    <section id="qna" class="container">
+      <div class="status-bar">
+        <div class="status"></div>
+      </div>
+      <div class="q box"></div>
+      <div class="answer"></div>
+    </section>
+    <section id="calc">
+      <div class="calc-bar">
+        CALCULATING
+        <div class="calc"></div>
+      </div>
+      <p class="wait">잠시 기다려주세요...</p>
+    </section>
+    <section id="result" class="container">
+      <div id="score-box">
+        <div class="p title"></div>
+        <div class="point"></div>
+        <div class="pin"></div>
+        <div class="score-bar"></div>
+      </div>
+      <div id="desc-box">
+        <div class="art"></div>
+        <div class="result title"></div>
+        <div class="res desc"></div>
+        <span class="go-artist highlight" onclick=javascript:goArtist()>
+          테스트가 마음에 드시나요?
+        </span>
+      </div>
+      <hr>
+      <p>친구들과 공유하기</p>
+      <div class="hash">#Investment_MBTI_test #투자성향테스트 #포트폴리오테스트</div>
+      <div id="share-box">
+        <a onclick=javascript:tw() target="_blank" alt="Share on Twitter" title="트위터에 공유하기">
+          <span class="tw"></span>
+        </a>
+        <a onclick=javascript:fb() target="_blank" alt="Share on Facebook" title="페이스북에 공유하기">
+          <span class="fb"></span>
+        </a>
+        <a onclick=javascript:nv() target="_blank" alt="Share on Naver" title="네이버에 공유하기">
+          <span class="nv"></span>
+        </a>
+        <a onclick=javascript:band() target="_blank" alt="Share on Naver Band" title="네이버 밴드에 공유하기">
+          <span class="band"></span>
+        </a>
+      </div>
+      <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+      <hr>
+      <div class="caution">
+        <p>
+          본 결과가 본인의 투자성향을 완벽하게 알려주진 못할 수 있습니다.<br>
+          결과를 토대로 본인의 투자성향에 적합한 최적의 포트폴리오를 만들어 보세요.<br>
+          당신의 성공적인 투자를 기원합니다!<br><br>
+          테스트가 재밌었다면
+          <span class="go-share highlight" onclick=javascript:goShare()>공유하기</span>로 개발자를 도와주세요!
+        </p>
+      </div>
+      <hr>
+    </section>
+    <footer id="footer">
+      <div>
+        <span class="highlight">Dain Kim</span>
+        © 2020
+      </div>
+      <a href="https://github.com/dev-dain" target=_blank title="개발자 깃허브">
+        <div class="logo foot github"></div>
+      </a>
+      <a href="https://dev-dain.tistory.com" target=_blank title="개발자 블로그">
+        <div class="logo foot tistory"></div>
+      </a>
+    </footer>
+  </div>
+  <script src="js/darkmode.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
+</body>
+
+</html>
