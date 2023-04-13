@@ -3,70 +3,80 @@ const qnaList = [
     q: '1. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 금', score: 0 },
-      { answer: 'b. 도지코인', score: 5 }
+      { answer: 'b. 도지코인', score: 10 }
     ]
   },
   {
     q: '2. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 미국 국채', score: 0 },
-      { answer: 'b. 테슬라', score: 5 }
+      { answer: 'b. 테슬라', score: 10 }
     ]
   },
   {
     q: '3. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 나스닥', score: 0 },
-      { answer: 'b. 비트코인', score: 5 }
+      { answer: 'b. 비트코인', score: 10 }
     ]
   },
   {
     q: '4. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 금', score: 0 },
-      { answer: 'b. 유가', score: 5 }
+      { answer: 'b. 유가', score: 10 }
     ]
   },
   {
     q: '5. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 삼성전자', score: 0 },
-      { answer: 'b. 나스닥', score: 5 }
+      { answer: 'b. 나스닥', score: 10 }
     ]
   },
   {
     q: '6. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 코스피', score: 0 },
-      { answer: 'b. 삼성전자', score: 5 }
+      { answer: 'b. 삼성전자', score: 10 }
     ]
   },
   {
     q: '7. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image001.jpg" alt="image001"><br>',
     a: [
-      { answer: 'a', score: 0, score2: 0 },
-      { answer: 'b', score: 5, score2: 1 }
+      { answer: 'A', score: 0, score2: 0 },
+      { answer: 'B', score: 10, score2: 1 }
     ]
   },
   {
     q: '8. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image002.jpg" alt="image002"><br>',
     a: [
-      { answer: 'a', score: 0, score2: 0 },
-      { answer: 'b', score: 5, score2: 1 }
+      { answer: 'A', score: 0, score2: 0 },
+      { answer: 'B', score: 10, score2: 1 }
     ]
   },
   {
     q: '9. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image003.jpg" alt="image003"><br>',
     a: [
-      { answer: 'a', score: 0, score2: 0 },
-      { answer: 'b', score: 5, score2: 1 }
+      { answer: 'A', score: 0, score2: 0 },
+      { answer: 'B', score: 10, score2: 1 }
     ]
   },
   {
     q: '10. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image004.jpg" alt="image004"><br>',
     a: [
-      { answer: 'a', score: 0, score2: 0 },
-      { answer: 'b', score: 5, score2: 1 }
+      { answer: 'A', score: 0, score2: 0 },
+      { answer: 'B', score: 10, score2: 1 }
+    ]
+  },
+  {
+    q: '11. 주식 자산 중 투자하고 싶은 지역은?',
+    a: [
+      { answer: 'a. 글로벌 한 번에' },
+      { answer: 'b. 한국' },
+      { answer: 'c. 미국' },
+      { answer: 'd. 중국' },
+      { answer: 'e. 유럽' }
     ]
   }
 ]
