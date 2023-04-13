@@ -146,8 +146,8 @@ const goResult = () => {
   res_img.alt = infoList[grade].name + infoList2[grade2-1].name + infoList3[grade3-1].name;
   res_img.title = infoList[grade].name + infoList2[grade2-1].name + infoList3[grade3-1].name;;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList[grade].name + "<br><br>" + infoList2[grade2-1].name + "<br><br>" + infoList3[grade3-1].name;
-  desc.innerHTML = infoList[grade].desc + "<br><br>" + infoList2[grade2-1].desc + "<br><br>" + infoList3[grade3-1].desc;
+  animal.innerHTML = infoList[grade].name + "<br><br>" + infoList2[grade2-2].name + "<br><br>" + infoList3[grade3-2].name;
+  desc.innerHTML = infoList[grade].desc + "<br><br>" + infoList2[grade2-2].desc + "<br><br>" + infoList3[grade3-2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
