@@ -68,15 +68,15 @@ const calcScore3 = () => {
 }
 
 const sortResult = (point) => {
-  let num = 1;
+  let num = 0;
   if (point <= 10) {
-    num = 1;
+    num = 0;
   } else if (point <= 54) {
-    num = 2;
+    num = 1;
   } else if (point <= 89) {
-    num = 3;
+    num = 2;
   } else {
-    num = 4;
+    num = 3;
   }
   return num;
 }
@@ -132,7 +132,7 @@ const goResult = () => {
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
-  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade + '-' + '.png';
+  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade+1 + '-' + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
