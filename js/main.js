@@ -129,10 +129,11 @@ const goResult = () => {
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(point3);
+  const grade4 = grade + 1;
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
-  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade+1 + '-' + '.png';
+  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade4 + '-' + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
