@@ -99,13 +99,13 @@ const sortResult2 = (point2) => {
 
 const sortResult3 = (point3) => {
   let num3 = 1;
-  if (point3 = 1) {
+  if (point3 = 0) {
     num3 = 1;
-  } else if (point3 = 2) {
+  } else if (point3 = 1) {
     num3 = 2;
-  } else if (point3 = 3) {
+  } else if (point3 = 2) {
     num3 = 3;
-  } else if (point3 = 4) {
+  } else if (point3 = 3) {
     num3 = 4;
   } else {
     num3 = 5;
