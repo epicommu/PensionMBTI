@@ -59,8 +59,6 @@ const calcScore2 = () => {
   return point2;
 }
 
-const score3 = qnaList[11].a[select[11].score3;
-
 const sortResult = (point) => {
   let num = 1;
   if (point <= 10) {
@@ -117,6 +115,7 @@ const goResult = () => {
   const result = document.getElementById('result');
   const point = calcScore();
   const point2 = calcScore2();
+  const score3 = qnaList[10].a[select[10].score3;
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(score3);
