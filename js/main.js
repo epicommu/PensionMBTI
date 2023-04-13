@@ -129,7 +129,9 @@ const goResult = () => {
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(point3);
-  const grade4 = grade + 1;
+  const grade4 = 5 - (grade + 1);
+  const grade2_2 = grade2 - 1;
+  const grade3_2 = grade3 - 1;
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
@@ -143,11 +145,11 @@ const goResult = () => {
   res_point.innerHTML = point + '%';
   pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
-  res_img.alt = infoList[grade].name + infoList2[grade2-2].name + infoList3[grade3-2].name;
-  res_img.title = infoList[grade].name + infoList2[grade2-2].name + infoList3[grade3-2].name;;
+  res_img.alt = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_@].name;
+  res_img.title = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_2].name;;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList[grade].name + "<br><br>" + infoList2[grade2-2].name + "<br><br>" + infoList3[grade3-2].name;
-  desc.innerHTML = infoList[grade].desc + "<br><br>" + infoList2[grade2-2].desc + "<br><br>" + infoList3[grade3-2].desc;
+  animal.innerHTML = infoList[grade].name + "<br><br>" + infoList2[grade2_2].name + "<br><br>" + infoList3[grade3_2].name;
+  desc.innerHTML = infoList[grade].desc + "<br><br>" + infoList2[grade2_2].desc + "<br><br>" + infoList3[grade3_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
