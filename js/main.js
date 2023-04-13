@@ -51,20 +51,58 @@ const calcScore = () => {
   return point;
 }
 
+const calcScore2 = () => {
+  let point2 = 0;
+  for (let i = 0; i < ENDPOINT; i++) {
+    point2 += qnaList[i].a[select[i]].score2;
+  }
+  return point2;
+}
+
+const score3 = qnaList[10].a[select[i].score3;
+
 const sortResult = (point) => {
-  let num = 0;
-  if (point <= 9) {
-    num = 0;
-  } else if (point <= 24) {
+  let num = 1;
+  if (point <= 10) {
     num = 1;
-  } else if (point <= 30) {
+  } else if (point <= 54) {
     num = 2;
-  } else if (point <= 44) {
+  } else if (point <= 89) {
     num = 3;
   } else {
     num = 4;
   }
   return num;
+}
+
+const sortResult2 = (point2) => {
+  let num2 = 1;
+  if (point2 = 0) {
+    num2 = 1;
+  } else if (point2 = 1) {
+    num2 = 2;
+  } else if (point2 = 2) {
+    num2 = 3;
+  } else {
+    num2 = 4;
+  }
+  return num2;
+}
+
+const sortResult3 = (score3) => {
+  let num3 = 1;
+  if (score3 = 1) {
+    num3 = 1;
+  } else if (score3 = 2) {
+    num3 = 2;
+  } else if (score3 = 3) {
+    num3 = 3;
+  } else if (score3 = 4) {
+    num3 = 4;
+  } else {
+    num3 = 5;
+  }
+  return num3;
 }
 
 const goResult = () => {
@@ -78,11 +116,14 @@ const goResult = () => {
 
   const result = document.getElementById('result');
   const point = calcScore();
+  const point2 = calcScore2();
   const grade = sortResult(point);
+  const grade2 = sortResult2(point2);
+  const grade3 = sortResult3(score3);
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
-  const img_url = 'img/image-' + grade + '.png';
+  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade + '-' + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
