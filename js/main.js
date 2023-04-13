@@ -59,7 +59,7 @@ const calcScore2 = () => {
   return point2;
 }
 
-const score3 = qnaList[10].a[select[10].score3;
+const score3 = qnaList[11].a[select[11].score3;
 
 const sortResult = (point) => {
   let num = 1;
