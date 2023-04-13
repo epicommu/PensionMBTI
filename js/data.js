@@ -111,3 +111,59 @@ const infoList = [
     desc: '주식 100% 몰빵 포트폴리오'
   }
 ]
+
+const infoList2 = [
+  {
+    range: 0,
+    name: '예금 투자형',
+    desc: '대표적인 ETF: SHV'
+  },
+  {
+    range: 1, 
+    name: '단기 국채형',
+    desc: '대표적인 ETF: SHY'
+  },
+  {
+    range: 2, 
+    name: '중장기 국채형',
+    desc: '대표적인 ETF: IEF'
+  },
+  {
+    range: 3, 
+    name: '투자등급 회사채형',
+    desc: '대표적인 ETF: LQD'
+  },
+  {
+    range: 4, 
+    name: '하이일드 회사채형',
+    desc: '대표적인 ETF: HYG'
+  }
+]
+
+const infoList3 = [
+  {
+    range: 0,
+    name: '글로벌 주식 투자자',
+    desc: '대표적인 ETF: ACWI'
+  },
+  {
+    range: 1, 
+    name: '한국 주식 투자자',
+    desc: '대표적인 ETF: EWY'
+  },
+  {
+    range: 2, 
+    name: '미국 주식 투자자',
+    desc: '대표적인 ETF: SPY'
+  },
+  {
+    range: 3, 
+    name: '중국 주식 투자자',
+    desc: '대표적인 ETF: FXI'
+  },
+  {
+    range: 4, 
+    name: '유럽 주식 투자자',
+    desc: '대표적인 ETF: FEZ'
+  }
+]
