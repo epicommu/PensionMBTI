@@ -114,27 +114,32 @@ const infoList = [
 
 const infoList2 = [
   {
-    range: 0,
+    from: 0,
+    to: 0,
     name: '예금 투자형',
     desc: '대표적인 ETF: SHV'
   },
   {
-    range: 1, 
+    from: 1,
+    to: 1, 
     name: '단기 국채형',
     desc: '대표적인 ETF: SHY'
   },
   {
-    range: 2, 
+    from: 2,
+    to: 2, 
     name: '중장기 국채형',
     desc: '대표적인 ETF: IEF'
   },
   {
-    range: 3, 
+    from: 3,
+    to: 3,
     name: '투자등급 회사채형',
     desc: '대표적인 ETF: LQD'
   },
   {
-    range: 4, 
+    from: 4,
+    to: 4,
     name: '하이일드 회사채형',
     desc: '대표적인 ETF: HYG'
   }
@@ -142,27 +147,32 @@ const infoList2 = [
 
 const infoList3 = [
   {
-    range: 0,
+    from: 0,
+    to: 0,
     name: '글로벌 주식 투자자',
     desc: '대표적인 ETF: ACWI'
   },
   {
-    range: 1, 
+    from: 1,
+    to: 1, 
     name: '한국 주식 투자자',
     desc: '대표적인 ETF: EWY'
   },
   {
-    range: 2, 
+    from: 2,
+    to: 2,
     name: '미국 주식 투자자',
     desc: '대표적인 ETF: SPY'
   },
   {
-    range: 3, 
+    from: 3,
+    to: 3, 
     name: '중국 주식 투자자',
     desc: '대표적인 ETF: FXI'
   },
   {
-    range: 4, 
+    from: 4,
+    to: 4,
     name: '유럽 주식 투자자',
     desc: '대표적인 ETF: FEZ'
   }
