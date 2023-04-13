@@ -59,6 +59,14 @@ const calcScore2 = () => {
   return point2;
 }
 
+const calcScore3 = () => {
+  let point3 = 0;
+  for (let i = 0; i < ENDPOINT; i++) {
+    point3 += qnaList[i].a[select[i]].score3;
+  }
+  return point3;
+}
+
 const sortResult = (point) => {
   let num = 1;
   if (point <= 10) {
@@ -81,21 +89,23 @@ const sortResult2 = (point2) => {
     num2 = 2;
   } else if (point2 = 2) {
     num2 = 3;
-  } else {
+  } else if (point2 = 3) {
     num2 = 4;
+  } else {
+    num2 = 5;
   }
   return num2;
 }
 
-const sortResult3 = (score3) => {
+const sortResult3 = (point3) => {
   let num3 = 1;
-  if (score3 = 1) {
+  if (point3 = 1) {
     num3 = 1;
-  } else if (score3 = 2) {
+  } else if (point3 = 2) {
     num3 = 2;
-  } else if (score3 = 3) {
+  } else if (point3 = 3) {
     num3 = 3;
-  } else if (score3 = 4) {
+  } else if (point3 = 4) {
     num3 = 4;
   } else {
     num3 = 5;
@@ -115,10 +125,10 @@ const goResult = () => {
   const result = document.getElementById('result');
   const point = calcScore();
   const point2 = calcScore2();
-  const score3 = qnaList[10].a[select[10].score3;
+  const point3 = calcScore3();
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
-  const grade3 = sortResult3(score3);
+  const grade3 = sortResult3(point3);
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
