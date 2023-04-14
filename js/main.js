@@ -143,7 +143,7 @@ const goResult = () => {
 
   pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point + '%';
-  pin.style.marginLeft = point * 1%;
+  pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
   res_img.alt = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_2].name;
   res_img.title = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_2].name;;
