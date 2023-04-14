@@ -72,7 +72,7 @@ const qnaList = [
   {
     q: '11. 주식 자산 중 투자하고 싶은 지역은?',
     a: [
-      { answer: 'a. 글로벌 한 번에', score: 0, score2: 0, score3: 0 },
+      { answer: 'a. 글로벌', score: 0, score2: 0, score3: 0 },
       { answer: 'b. 한국', score: 0, score2: 0, score3: 1 },
       { answer: 'c. 미국', score: 0, score2: 0, score3: 2 },
       { answer: 'd. 중국', score: 0, score2: 0, score3: 3 },
