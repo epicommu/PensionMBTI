@@ -83,7 +83,7 @@ const sortResult = (point) => {
 
 const sortResult2 = (point2) => {
   let num2 = 1;
-  if (point2 = 0) {
+  if (point2 == 0) {
     num2 = 1;
   } else if (point2 == 1) {
     num2 = 2;
@@ -99,7 +99,7 @@ const sortResult2 = (point2) => {
 
 const sortResult3 = (point3) => {
   let num3 = 1;
-  if (point3 = 0) {
+  if (point3 == 0) {
     num3 = 1;
   } else if (point3 == 1) {
     num3 = 2;
