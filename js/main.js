@@ -85,11 +85,11 @@ const sortResult2 = (point2) => {
   let num2 = 1;
   if (point2 = 0) {
     num2 = 1;
-  } else if (point2 = 1) {
+  } else if (point2 == 1) {
     num2 = 2;
-  } else if (point2 = 2) {
+  } else if (point2 == 2) {
     num2 = 3;
-  } else if (point2 = 3) {
+  } else if (point2 == 3) {
     num2 = 4;
   } else {
     num2 = 5;
@@ -101,11 +101,11 @@ const sortResult3 = (point3) => {
   let num3 = 1;
   if (point3 = 0) {
     num3 = 1;
-  } else if (point3 = 1) {
+  } else if (point3 == 1) {
     num3 = 2;
-  } else if (point3 = 2) {
+  } else if (point3 == 2) {
     num3 = 3;
-  } else if (point3 = 3) {
+  } else if (point3 == 3) {
     num3 = 4;
   } else {
     num3 = 5;
