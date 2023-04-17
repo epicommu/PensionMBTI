@@ -123,10 +123,9 @@ hr {
 }
 
 #gender-input > input {
-  width: 100%;
+  width: 25%;
   height: 10px;
   border: 1px #ddd solid;
-  border-radius: 20px;
   font-weight: lighter;
   font-size: 19.2px;
   font-size: 1.2rem;
