@@ -110,12 +110,16 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+          going-down 0.4s ease-out 1.4s both;
 }
 
 #gender-input > .input-label {
   margin-right: 10px;
   font-size: 1.2rem;
   font-weight: bold;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+          going-down 0.4s ease-out 1.4s both;
 }
 
 #gender-input > input {
@@ -138,12 +142,16 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+          going-down 0.4s ease-out 1.4s both;
 }
 
 #age-input > .input-label {
   margin-right: 10px;
   font-size: 1.2rem;
   font-weight: bold;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+          going-down 0.4s ease-out 1.4s both;
 }
 
 #age-input > select {
