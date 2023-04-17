@@ -264,17 +264,17 @@ hr {
   }
   #gender-input {
     margin: 30px 30% 0 30%;
-    width: 40%;
+    width: 20%;
   }
   #gender-input > input {
-    height: 50px;
+    height: 10px;
   }
   #age-input {
     margin: 30px 30% 0 30%;
-    width: 40%;
+    width: 20%;
   }
   #age-input > input {
-    height: 50px;
+    height: 40px;
   }
   .check-name {
     margin: 25px 20%;
