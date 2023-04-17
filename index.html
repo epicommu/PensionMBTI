@@ -68,7 +68,21 @@
       </p>
       <hr class="w-line">
       <div id="name-input">
-        <input type="text" placeholder="이름" autofocus>
+        <input type="text" placeholder="이메일" autofocus>
+      </div>
+      <div id="gender-input">
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label>
+      </div>
+      <div id="age-input">
+        <select>
+          <option value="under20">20세 미만</option>
+          <option value="20s">20~30대</option>
+          <option value="40s">40~50대</option>
+          <option value="over60">60세 이상</option>
+        </select>
       </div>
       <p class="check-name warning"></p>
       <div class="start-wrap">
