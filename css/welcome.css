@@ -107,18 +107,22 @@ hr {
   box-sizing: border-box;
   margin: 20px 25% 10px 25%;
   width: 50%;
-}
-#gender-input > label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-right: 10px;
-  border: 1px #ddd solid;
-  font-size: 1.2rem;
-  animation: fade-in 0.4s ease-out 1.4s both, 
-          going-down 0.4s ease-out 1.4s both;
+  justify-content: center;
 }
-#gender-input > label > input[type="radio"] {
-  margin-right: 5px;
+.input-label {
+  font-weight: bold;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+            going-down 0.4s ease-out 1.4s both;
+}
+#gender-input > input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin: 0 5px;
 }
 #age-input {
   box-sizing: border-box;
