@@ -53,3 +53,14 @@ function saveDataToSheet() {
     });
   });
 }
+
+function getLastRow() {
+  return gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg',
+    range: 'Investment_MBTI!A:A',
+    majorDimension: 'COLUMNS'
+  }).then(function(response) {
+    var column = response.result.values[0];
+    return column.length;
+  });
+}
