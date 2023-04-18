@@ -136,6 +136,17 @@ hr {
   opacity: 0;
   animation: fade-in 0.4s ease-out 1.4s both, going-down 0.4s ease-out 1.4s both;
 }
+#gender-input > label {
+  width: 25%;
+  height: 20px;
+  border: 1px #ddd solid;
+  font-weight: lighter;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 0.4s ease-out 1.4s both, going-down 0.4s ease-out 1.4s both;
+}
 
 #age-input {
   box-sizing: border-box;
