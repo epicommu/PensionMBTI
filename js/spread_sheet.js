@@ -4,7 +4,7 @@ gapi.load('client', function() {
   gapi.client.init({
     apiKey: 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    clientId: '1223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
+    clientId: '223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
     scope: 'https://www.googleapis.com/auth/spreadsheets'
   }).then(function() {
     // 클라이언트 초기화 성공 시 실행할 함수
