@@ -21,16 +21,13 @@ function saveDataToSheet() {
   var name = $('#name-input input').val();
   var gender = $('input[name=gender]:checked', '#gender-input').val();
   var age = $('#age-input select').val();
-  var answerIdx = select[qIdx]; // 선택한 답변의 인덱스
-  var answerOptions = document.querySelectorAll('.answer button'); // 모든 답변 버튼
-  var answer = answerOptions[answerIdx].textContent; // 선택한 답변의 텍스트
 
   // 구글 스프레드시트 정보
   var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
   var sheetName = 'Investment_MBTI';
 
   // 저장할 데이터 배열
-  var data = [[name, gender, age, qIdx+1, answer]];
+  var data = [[name, gender, age]];
 
   // 마지막 행의 인덱스를 가져온 다음 데이터를 추가
   getLastRow().then(function(lastRow) {
