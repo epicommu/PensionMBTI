@@ -2,7 +2,7 @@
 gapi.load('client', function() {
   // 구글 API 클라이언트 초기화
   gapi.client.init({
-    apiKey: 'bf1ec53a9a38632bf686d2f483edf52538b4d7b9',
+    apiKey: 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     clientId: '1223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
     scope: 'https://www.googleapis.com/auth/spreadsheets'
@@ -26,7 +26,7 @@ function saveDataToSheet() {
   var answer = answerOptions[answerIdx].textContent; // 선택한 답변의 텍스트
 
   // 구글 스프레드시트 정보
-  var spreadsheetId = '111803070980526910303';
+  var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
   var sheetName = 'Investment_MBTI';
   var range = 'A2:E2';
 
