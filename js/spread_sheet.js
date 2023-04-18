@@ -33,7 +33,7 @@ function saveDataToSheet() {
   // 구글 스프레드시트 정보
   var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
   var sheetName = 'Investment_MBTI';
-  var range = 'A2:E2';
+  var range = sheetName + '!A:A'; // 다음 행에 추가하도록 range 값 수정
 
   // 저장할 데이터 배열
   var data = [[name, gender, age, qIdx+1, answer]];
@@ -41,14 +41,15 @@ function saveDataToSheet() {
   // 구글 API를 사용하여 데이터 저장
   var params = {
     spreadsheetId: spreadsheetId,
-    range: sheetName + '!' + range,
+    range: range, // 수정된 range 값 사용
     valueInputOption: 'USER_ENTERED',
+    insertDataOption: 'INSERT_ROWS', // 새로운 행에 추가
     resource: {
       values: data
     }
   };
 
-  gapi.client.sheets.spreadsheets.values.update(params).then(function(response) {
+  gapi.client.sheets.spreadsheets.values.append(params).then(function(response) {
     console.log(response);
   }, function(error) {
     console.log(error);
