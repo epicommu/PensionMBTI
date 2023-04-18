@@ -28,8 +28,8 @@ function saveDataToSheet() {
   var answer = answerOptions[answerIdx].textContent; // 선택한 답변의 텍스트
 
   // 구글 스프레드시트 정보
-  var spreadsheetId = 'YOUR_SPREADSHEET_ID';
-  var sheetName = 'YOUR_SHEET_NAME';
+  var spreadsheetId = '111803070980526910303';
+  var sheetName = 'Investment_MBTI';
   var range = 'A2:E2';
 
   // 저장할 데이터 배열
