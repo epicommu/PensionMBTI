@@ -1,5 +1,5 @@
 // API 클라이언트 초기화
-function initClient() {
+async function initClient() {
   // 초기화 설정
   var initOptions = {
     apiKey: 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
@@ -9,18 +9,14 @@ function initClient() {
   };
 
   // 클라이언트 초기화
-  gapi.client.init(initOptions).then(function() {
-    // 인증 상태를 확인하고, 인증되지 않았으면 로그인
-    if (!gapi.auth2.getAuthInstance().isSignedIn.get()) {
-      gapi.auth2.getAuthInstance().signIn().then(function() {
-        saveDataToSheet();
-      });
-    } else {
-      saveDataToSheet();
-    }
-  }, function(error) {
-    console.log(error);
-  });
+  await gapi.client.init(initOptions);
+
+  // 인증 상태를 확인하고, 인증되지 않았으면 로그인
+  if (!gapi.auth2.getAuthInstance().isSignedIn.get()) {
+    await gapi.auth2.getAuthInstance().signIn();
+  }
+
+  saveDataToSheet();
 }
 
 // 데이터 저장 함수
