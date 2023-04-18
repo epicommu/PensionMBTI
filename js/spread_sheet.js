@@ -17,6 +17,9 @@ function initClient() {
 
 // 데이터 저장 함수
 function saveDataToSheet() {
+    // jQuery 로드
+  var $ = window.jQuery;
+  
   // 저장할 데이터
   var name = $('#name-input input').val();
   var gender = $('input[name=gender]:checked', '#gender-input').val();
