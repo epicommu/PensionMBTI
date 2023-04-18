@@ -127,7 +127,7 @@ hr {
 
 #gender-input > input {
   width: 25%;
-  height: 20px;
+  height: 40px;
   border: 1px #ddd solid;
   font-weight: lighter;
   font-size: 19.2px;
@@ -138,8 +138,7 @@ hr {
 }
 #gender-input > label {
   width: 25%;
-  height: 20px;
-  border: 1px #ddd solid;
+  height: 40px;
   font-weight: lighter;
   font-size: 19.2px;
   font-size: 1.2rem;
