@@ -62,18 +62,18 @@ function saveDataToSheet() {
 // 마지막 행의 인덱스를 반환하는 함수
 function getLastRow() {
   // 구글 스프레드시트 정보
-  var spreadsheetId = 'SPREADSHEET_ID';
+  var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
   var sheetName = 'Investment_MBTI';
   var range = sheetName + '!A:A';
 
   // 구글 API를 사용하여 데이터 가져오기
   return gapi.client.sheets.spreadsheets.values.get({
-  spreadsheetId: spreadsheetId,
-  range: range
+    spreadsheetId: spreadsheetId,
+    range: range
   }).then(function(response) {
-  var numRows = response.result.values ? response.result.values.length : 0;
-  return numRows;
+    var numRows = response.result.values ? response.result.values.length : 0;
+    return numRows;
   }, function(error) {
-  console.log(error);
+    console.log(error);
   });
-  }
+}
