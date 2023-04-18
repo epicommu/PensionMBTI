@@ -1,13 +1,11 @@
 // 구글 API 클라이언트 라이브러리 로드
-gapi.load('client', initClient);
-
-// 구글 API 클라이언트 초기화
-function initClient() {
+gapi.load('client', function() {
+  // 구글 API 클라이언트 초기화
   gapi.client.init({
     apiKey: 'Ybf1ec53a9a38632bf686d2f483edf52538b4d7b9',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     clientId: '111803070980526910303',
-    scope: 'https://www.googleapis.com/auth/spreadsheets',
+    scope: 'https://www.googleapis.com/auth/spreadsheets'
   }).then(function() {
     // 클라이언트 초기화 성공 시 실행할 함수
     saveDataToSheet();
@@ -15,7 +13,7 @@ function initClient() {
     // 클라이언트 초기화 실패 시 실행할 함수
     console.log(error);
   });
-}
+});
 
 // 데이터 저장 함수
 function saveDataToSheet() {
