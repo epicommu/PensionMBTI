@@ -1,6 +1,3 @@
-// 구글 API 클라이언트 라이브러리 로드
-gapi.load('client:auth2', initClient);
-
 // API 클라이언트 초기화
 function initClient() {
   // 초기화 설정
@@ -42,16 +39,16 @@ function saveDataToSheet() {
   var data = [[name, gender, age, qIdx+1, answer]];
 
   // 구글 API를 사용하여 데이터 저장
-  var valueRange = {
-    'values': data
-  };
-  var request = gapi.client.sheets.spreadsheets.values.update({
+  var params = {
     spreadsheetId: spreadsheetId,
     range: sheetName + '!' + range,
     valueInputOption: 'USER_ENTERED',
-    resource: valueRange
-  });
-  request.then(function(response) {
+    resource: {
+      values: data
+    }
+  };
+
+  gapi.client.sheets.spreadsheets.values.update(params).then(function(response) {
     console.log(response);
   }, function(error) {
     console.log(error);
