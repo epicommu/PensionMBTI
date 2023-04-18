@@ -31,44 +31,36 @@ function saveDataToSheet() {
   // 저장할 데이터 배열
   var data = [[name, gender, age]];
 
-  // 마지막 행의 인덱스를 가져온 다음 데이터를 추가
+  // 다음 행에 데이터를 추가하기 위해 마지막 행 인덱스를 가져옴
   getLastRow().then(function(lastRow) {
-    var range = sheetName + '!A' + (lastRow + 1); // 다음 행에 추가하도록 range 값 수정
+    var nextRow = lastRow + 1;
+    var range = sheetName + '!A' + nextRow + ':C' + nextRow; // 다음 행에 추가하도록 range 값 수정
 
     // 구글 API를 사용하여 데이터 저장
-    var params = {
-      spreadsheetId: spreadsheetId,
-      range: range, // 수정된 range 값 사용
-      valueInputOption: 'USER_ENTERED',
-      insertDataOption: 'INSERT_ROWS', // 새로운 행에 추가
-      resource: {
-        values: data
-      }
-    };
-
-    gapi.client.sheets.spreadsheets.values.append(params).then(function(response) {
+    appendValues(spreadsheetId, range, 'USER_ENTERED', data, function(response) {
       console.log(response);
-    }, function(error) {
-      console.log(error);
     });
   });
 }
 
-// 마지막 행의 인덱스를 반환하는 함수
-function getLastRow() {
-  // 구글 스프레드시트 정보
-  var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
-  var sheetName = 'Investment_MBTI';
-  var range = sheetName + '!A:A';
-
-  // 구글 API를 사용하여 데이터 가져오기
-  return gapi.client.sheets.spreadsheets.values.get({
-    spreadsheetId: spreadsheetId,
-    range: range
-  }).then(function(response) {
-    var numRows = response.result.values ? response.result.values.length : 0;
-    return numRows;
-  }, function(error) {
-    console.log(error);
-  });
+function appendValues(spreadsheetId, range, valueInputOption, _values, callback) {
+  let values = _values;
+  const body = {
+    values: values,
+  };
+  try {
+    gapi.client.sheets.spreadsheets.values.append({
+      spreadsheetId: spreadsheetId,
+      range: range,
+      valueInputOption: valueInputOption,
+      resource: body,
+    }).then((response) => {
+      const result = response.result;
+      console.log(`${result.updates.updatedCells} cells appended.`);
+      if (callback) callback(response);
+    });
+  } catch (err) {
+    document.getElementById('content').innerText = err.message;
+    return;
+  }
 }
