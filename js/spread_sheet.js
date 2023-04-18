@@ -2,7 +2,7 @@
 gapi.load('client', function() {
   // 구글 API 클라이언트 초기화
   gapi.client.init({
-    apiKey: 'Ybf1ec53a9a38632bf686d2f483edf52538b4d7b9',
+    apiKey: 'bf1ec53a9a38632bf686d2f483edf52538b4d7b9',
     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     clientId: '111803070980526910303',
     scope: 'https://www.googleapis.com/auth/spreadsheets'
