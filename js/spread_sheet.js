@@ -12,9 +12,12 @@ function initClient() {
   gapi.client.init(initOptions).then(function() {
     // 인증 상태를 확인하고, 인증되지 않았으면 로그인
     if (!gapi.auth2.getAuthInstance().isSignedIn.get()) {
-      gapi.auth2.getAuthInstance().signIn();
+      gapi.auth2.getAuthInstance().signIn().then(function() {
+        saveDataToSheet();
+      });
+    } else {
+      saveDataToSheet();
     }
-    saveDataToSheet();
   }, function(error) {
     console.log(error);
   });
@@ -33,7 +36,7 @@ function saveDataToSheet() {
   // 구글 스프레드시트 정보
   var spreadsheetId = '1oJGNEqw9pCR5IErrIu9PC3sf8AsFlUo_QDZCnbC1jyg';
   var sheetName = 'Investment_MBTI';
-  var range = sheetName + '!A:A'; // 다음 행에 추가하도록 range 값 수정
+  var range = sheetName + '!A' + (getLastRow() + 1); // 다음 행에 추가하도록 range 값 수정
 
   // 저장할 데이터 배열
   var data = [[name, gender, age, qIdx+1, answer]];
@@ -55,3 +58,22 @@ function saveDataToSheet() {
     console.log(error);
   });
 }
+
+// 마지막 행의 인덱스를 반환하는 함수
+function getLastRow() {
+  // 구글 스프레드시트 정보
+  var spreadsheetId = 'SPREADSHEET_ID';
+  var sheetName = 'Investment_MBTI';
+  var range = sheetName + '!A:A';
+
+  // 구글 API를 사용하여 데이터 가져오기
+  return gapi.client.sheets.spreadsheets.values.get({
+  spreadsheetId: spreadsheetId,
+  range: range
+  }).then(function(response) {
+  var numRows = response.result.values ? response.result.values.length : 0;
+  return numRows;
+  }, function(error) {
+  console.log(error);
+  });
+  }
