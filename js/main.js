@@ -67,6 +67,14 @@ const calcScore3 = () => {
   return point3;
 }
 
+const calcScore4 = () => {
+  let point4 = 0;
+  for (let i = 0; i < ENDPOINT; i++) {
+    point4 += qnaList[i].a[select[i]].score3;
+  }
+  return point4;
+}
+
 const sortResult = (point) => {
   let num = 0;
   if (point <= 10) {
@@ -113,6 +121,22 @@ const sortResult3 = (point3) => {
   return num3;
 }
 
+const sortResult4 = (point4) => {
+  let num4 = 1;
+  if (point4 == 0) {
+    num4 = 1;
+  } else if (point4 == 1) {
+    num4 = 2;
+  } else if (point4 == 2) {
+    num4 = 3;
+  } else if (point4 == 3) {
+    num4 = 4;
+  } else {
+    num4 = 5;
+  }
+  return num4;
+}
+
 const goResult = () => {
   if (pcMQL.matches) {
     console.log('PC');
@@ -126,12 +150,15 @@ const goResult = () => {
   const point = calcScore();
   const point2 = calcScore2();
   const point3 = calcScore3();
+  const point4 = calcScore4();
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(point3);
   const grade4 = 5 - (grade + 1);
+  const grade5 = sortResult4(point4);
   const grade2_2 = grade2 - 1;
   const grade3_2 = grade3 - 1;
+  const grade4_2 = grade5 - 1;
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
@@ -145,11 +172,11 @@ const goResult = () => {
   res_point.innerHTML = point + '%';
   pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
-  res_img.alt = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_2].name;
-  res_img.title = infoList[grade].name + infoList2[grade2_2].name + infoList3[grade3_2].name;;
+  res_img.alt = infoList[grade].name + infoList4[grade4_2].name;
+  res_img.title = infoList[grade].name + infoList2[grade4_2].name;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList[grade].name + "<br>" + infoList2[grade2_2].name + "<br>" + infoList3[grade3_2].name;
-  desc.innerHTML = infoList[grade].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
+  animal.innerHTML = infoList[grade].name + "<br>" + infoList4[grade4_2].name;
+  desc.innerHTML = infoList[grade].desc + "<br>" + infoList4[grade4_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
