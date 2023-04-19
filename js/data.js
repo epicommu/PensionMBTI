@@ -82,11 +82,10 @@ const qnaList = [
   {
     q: '12. 추가적으로 투자하고 싶은 대체자산은?',
     a: [
-      { answer: 'a. 없다', score: 0, score2: 0, score4: 0 },
-      { answer: 'b. 금', score: 0, score2: 0, score4: 1 },
-      { answer: 'c. 유가', score: 0, score2: 0, score4: 2 },
-      { answer: 'd. 부동산', score: 0, score2: 0, score4: 3 },
-      { answer: 'e. 비트코인', score: 0, score2: 0, score4: 4 }
+      { answer: 'a. 금', score: 0, score2: 0, score4: 0 },
+      { answer: 'b. 유가', score: 0, score2: 0, score4: 1 },
+      { answer: 'c. 부동산', score: 0, score2: 0, score4: 2 },
+      { answer: 'd. 비트코인', score: 0, score2: 0, score4: 3 }
     ]
   }
 ]
@@ -103,22 +102,22 @@ const infoList = [
     from: 11,
     to: 49,
     mLeft: '40%',
-    name: '토끼',
-    desc: '당신은 토끼 같은 안정추구형 투자자!'
+    name: '미어캣',
+    desc: '당신은 미어캣 같은 안정추구형 투자자!'
   },
   {
     from: 50,
     to: 89,
     mLeft: '60%',
-    name: '미어캣',
-    desc: '당신은 미어캣 같은 적극투자형 투자자!'
+    name: '하이에나',
+    desc: '당신은 하이에나 같은 적극투자형 투자자!'
   },
   {
     from: 90,
     to: 100,
     mLeft: '80%',
-    name: '하이에나',
-    desc: '당신은 하이에나 같은 공격투자형 투자자!'
+    name: '사자',
+    desc: '당신은  같은 공격투자형 투자자!'
   }
 ]
 
@@ -192,31 +191,25 @@ const infoList4 = [
   {
     from: 0,
     to: 0,
-    name: '동굴속의',
+    name: '농사 짓는 ',
     desc: ''
   },
   {
     from: 1,
     to: 1, 
-    name: '풀뜯는',
+    name: '공무원 ',
     desc: ''
   },
   {
     from: 2,
     to: 2,
-    name: '킁킁대는',
+    name: '대기업 다니는 ',
     desc: ''
   },
   {
     from: 3,
     to: 3, 
-    name: '습격하는',
-    desc: ''
-  },
-  {
-    from: 4,
-    to: 4,
-    name: '물어뜯는',
+    name: '트렌디세터 ',
     desc: ''
   }
 ]
