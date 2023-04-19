@@ -174,7 +174,7 @@ const goResult = () => {
   res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
-  desc.innerHTML = infoList[grade] + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
+  desc.innerHTML = infoList[grade].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
