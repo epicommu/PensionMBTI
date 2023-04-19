@@ -11,7 +11,7 @@ function initClient() {
   }).then(function () {
     // 클라이언트 초기화 성공 시 실행할 함수
     gapi.auth2.init({
-      client_id: 'CLIENT_ID',
+      client_id: '223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
       scope: 'https://www.googleapis.com/auth/spreadsheets',
       signIn: true
     }).then(function () {
