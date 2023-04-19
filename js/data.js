@@ -187,3 +187,36 @@ const infoList3 = [
     desc: '주식은? 미국 대비 많이 저렴해진 유럽증시에 투자!'
   }
 ]
+
+const infoList4 = [
+  {
+    from: 0,
+    to: 0,
+    name: '동굴속의',
+    desc: ''
+  },
+  {
+    from: 1,
+    to: 1, 
+    name: '풀뜯는',
+    desc: ''
+  },
+  {
+    from: 2,
+    to: 2,
+    name: '킁킁대는',
+    desc: ''
+  },
+  {
+    from: 3,
+    to: 3, 
+    name: '습격하는',
+    desc: ''
+  },
+  {
+    from: 4,
+    to: 4,
+    name: '물어뜯는',
+    desc: ''
+  }
+]
