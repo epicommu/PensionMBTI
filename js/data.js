@@ -78,6 +78,16 @@ const qnaList = [
       { answer: 'd. 중국', score: 0, score2: 0, score3: 3 },
       { answer: 'e. 유럽', score: 0, score2: 0, score3: 4 }
     ]
+  },
+  {
+    q: '12. 추가적으로 투자하고 싶은 대체자산은?',
+    a: [
+      { answer: 'a. 없다', score: 0, score2: 0, score4: 0 },
+      { answer: 'b. 금', score: 0, score2: 0, score4: 1 },
+      { answer: 'c. 유가', score: 0, score2: 0, score4: 2 },
+      { answer: 'd. 부동산', score: 0, score2: 0, score4: 3 },
+      { answer: 'e. 비트코인', score: 0, score2: 0, score4: 4 }
+    ]
   }
 ]
 
