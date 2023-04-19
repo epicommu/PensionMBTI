@@ -172,11 +172,11 @@ const goResult = () => {
   res_point.innerHTML = point + '%';
   pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
-  res_img.alt = infoList[grade].name + infoList4[grade4_2].name;
-  res_img.title = infoList[grade].name + infoList2[grade4_2].name;
+  res_img.alt = infoList4[grade4_2].name+ infoList[grade].name;
+  res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList[grade].name + "<br>" + infoList4[grade4_2].name;
-  desc.innerHTML = infoList[grade].desc + "<br>" + infoList4[grade4_2].desc;
+  animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
+  desc.innerHTML = infoList[grade] + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
