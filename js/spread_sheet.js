@@ -1,5 +1,5 @@
 // 1. 구글 API 클라이언트 로드 및 API 키 및 클라이언트 ID 설정
-gapi.load('client:auth2', initClient);
+gapi.load('client:auth', initClient);
 
 // 2. API 클라이언트 초기화 및 OAuth 인증 흐름 시작
 function initClient() {
@@ -10,11 +10,11 @@ function initClient() {
     scope: 'https://www.googleapis.com/auth/spreadsheets',
   }).then(function () {
     // 클라이언트 초기화 성공 시 실행할 함수
-    gapi.auth2.init({
+    gapi.auth.authorize({
       client_id: '223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
       scope: 'https://www.googleapis.com/auth/spreadsheets',
-      signIn: true
-    }).then(function () {
+      immediate: false
+    }, function() {
       saveDataToSheet();
     });
   }, function (error) {
@@ -25,9 +25,9 @@ function initClient() {
 
 // 데이터 저장 함수
 function saveDataToSheet() {
-    // jQuery 로드
+  // jQuery 로드
   var $ = window.jQuery;
-  
+
   // 저장할 데이터
   var name = $('#name-input input').val();
   var gender = $('input[name=gender]:checked', '#gender-input').val();
