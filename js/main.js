@@ -129,10 +129,8 @@ const sortResult4 = (point4) => {
     num4 = 2;
   } else if (point4 == 2) {
     num4 = 3;
-  } else if (point4 == 3) {
-    num4 = 4;
   } else {
-    num4 = 5;
+    num4 = 4;
   }
   return num4;
 }
