@@ -160,7 +160,7 @@ const goResult = () => {
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
-  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade4 + '.png';
+  const img_url = 'img/image' + grade3 + '-' + grade2 + '-' + grade5 + '-' + grade4 + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
