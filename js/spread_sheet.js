@@ -10,7 +10,11 @@ function initClient() {
     scope: 'https://www.googleapis.com/auth/spreadsheets',
   }).then(function () {
     // 클라이언트 초기화 성공 시 실행할 함수
-    gapi.auth2.getAuthInstance().signIn().then(function() {
+    gapi.auth2.init({
+      client_id: 'CLIENT_ID',
+      scope: 'https://www.googleapis.com/auth/spreadsheets',
+      signIn: true
+    }).then(function () {
       saveDataToSheet();
     });
   }, function (error) {
