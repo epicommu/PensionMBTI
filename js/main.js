@@ -170,11 +170,11 @@ const goResult = () => {
   res_point.innerHTML = point + '%';
   pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
-  res_img.alt = infoList4[grade4_2].name+ infoList[grade].name;
+  res_img.alt = infoList4[grade4_2].name + infoList[grade].name;
   res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
-  desc.innerHTML = infoList[grade].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
+  desc.innerHTML = "당신은" + infoList4[grade4_2].name+ infoList[grade].name + "로" + "<br>" + infoList[grade].desc + infoList4[grade4_2].desc + "<br>" + "자산 투자시 주식은" + infoList2[grade2_2].desc + "<br>" + "채권은" + infoList3[grade3_2].desc + "을(를) 추천드립니다.";
 
   setTimeout(() => {
     header.style.display = 'block';
