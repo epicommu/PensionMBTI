@@ -163,8 +163,8 @@ const goResult = () => {
   const img_url = 'img/' + grade3 + '-' + grade2 + '-' + grade5 + '-' + grade4 + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
-  const animal = "당신은" + document.querySelector('.result');
-  const desc = "당신은" + document.querySelector('.res');
+  const animal = document.querySelector('.result');
+  const desc = document.querySelector('.res');
 
   pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point + '%';
