@@ -191,25 +191,25 @@ const infoList4 = [
   {
     from: 0,
     to: 0,
-    name: '농사 짓는 ',
+    name: '동물원의 ',
     desc: ''
   },
   {
     from: 1,
     to: 1, 
-    name: '공무원 ',
+    name: '뒷산의 ',
     desc: ''
   },
   {
     from: 2,
     to: 2,
-    name: '대기업 다니는 ',
+    name: '애완 ',
     desc: ''
   },
   {
     from: 3,
     to: 3, 
-    name: '트렌디세터 ',
+    name: ' ',
     desc: ''
   }
 ]
