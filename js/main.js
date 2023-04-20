@@ -163,8 +163,8 @@ const goResult = () => {
   const img_url = 'img/' + grade3 + '-' + grade2 + '-' + grade5 + '-' + grade4 + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
-  const animal = document.querySelector('.result');
-  const desc = document.querySelector('.res');
+  const animal = "당신은" + document.querySelector('.result');
+  const desc = "당신은" + document.querySelector('.res');
 
   pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point + '%';
@@ -174,7 +174,7 @@ const goResult = () => {
   res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
-  desc.innerHTML = "당신은" + infoList4[grade4_2].name+ infoList[grade].name + "로" + "<br>" + infoList[grade].desc + infoList4[grade4_2].desc + "<br>" + "자산 투자시 주식은" + infoList2[grade2_2].desc + "<br>" + "채권은" + infoList3[grade3_2].desc + "을(를) 추천드립니다.";
+  desc.innerHTML = infoList[grade].desc + infoList4[grade4_2].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
