@@ -1,27 +1,17 @@
-// 1. 구글 API 클라이언트 로드 및 API 키 및 클라이언트 ID 설정
-gapi.load('client:auth', initClient);
-
-// 2. API 클라이언트 초기화 및 OAuth 인증 흐름 시작
-function initClient() {
+// 1. 구글 API 클라이언트 로드 및 서비스 계정 설정
+gapi.load('client', function() {
   gapi.client.init({
-    apiKey: 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
-    clientId: '223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
-    discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-    scope: 'https://www.googleapis.com/auth/spreadsheets',
-  }).then(function () {
-    // 클라이언트 초기화 성공 시 실행할 함수
-    gapi.auth.authorize({
-      client_id: '223843052834-okubm0hl7i4pie5cibq4u100oqkcu3o2.apps.googleusercontent.com',
-      scope: 'https://www.googleapis.com/auth/spreadsheets',
-      immediate: false
-    }, function() {
-      saveDataToSheet();
+    'apiKey': 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
+    'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+  }).then(function() {
+    // 서비스 계정 인증
+    var accessToken = gapi.auth.getToken().access_token;
+    gapi.auth.setToken({
+      'access_token': accessToken,
     });
-  }, function (error) {
-    // 클라이언트 초기화 실패 시 실행할 함수
-    console.log(error);
+    saveDataToSheet();
   });
-}
+});
 
 // 데이터 저장 함수
 function saveDataToSheet() {
