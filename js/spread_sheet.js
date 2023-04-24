@@ -1,17 +1,21 @@
 // 1. 구글 API 클라이언트 로드 및 서비스 계정 설정
 gapi.load('client', function() {
   gapi.client.init({
-    'apiKey': 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
+    'apiKey': 'YOUR_API_KEY',
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
     // 서비스 계정 인증
-    var accessToken = gapi.auth.getToken().access_token;
-    gapi.auth.setToken({
-      'access_token': accessToken,
+    var auth = gapi.auth2.getAuthInstance();
+    auth.signIn().then(function() {
+      var accessToken = auth.currentUser.get().getAuthResponse().access_token;
+      gapi.auth.setToken({
+        'access_token': accessToken,
+      });
+      saveDataToSheet();
     });
-    saveDataToSheet();
   });
 });
+
 
 // 데이터 저장 함수
 function saveDataToSheet() {
