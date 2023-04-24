@@ -1,7 +1,7 @@
 // 1. 구글 API 클라이언트 로드 및 서비스 계정 설정
 gapi.load('client', function() {
   gapi.client.init({
-    'apiKey': 'YOUR_API_KEY',
+    'apiKey': 'AIzaSyDjEbE4vsbThMNDp_Pb_42k8Tewi0QEShI',
     'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
   }).then(function() {
     // 서비스 계정 인증
