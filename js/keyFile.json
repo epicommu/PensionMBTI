@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "investment-mbi",
+  "private_key_id": "bf1ec53a9a38632bf686d2f483edf52538b4d7b9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbq+reLYMSJjVr\nUpacYkb3tIDfDAApqXmkGD2v2Y9NjRGbL+SxD9aMe9SrGIAxf814dLX1ccbImfrU\nnHRBtjeCwr/u35Quwcv+AyQxArGDD4IEv86fC8lbev7xZqVHc5od9Hxr4a3VCKeN\ngva1TEdvmlo7JRAnmGJfL9rB1VHg7bk7CgbE3DiW1G/mB3s3nnvUNJcDAsdG//XA\nd6GHiwoSpNDCZHp2+1hNUD92xtBaKeZJeMaDT/Odl7q0LzNvD/MSyUbeCSoQT21l\nOERz/OJQQ3LjBaQl3QUA6flgSqAbNSt0lrW7zjjl9VHbt1LPwh8ZswGc41AjITZJ\nT9FP9wVFAgMBAAECggEAR/YrjwRb9E5cYF3fyK/3nXdAIZujEZ9J32zjS0CXqaJe\nMq5rmdw38l4l++fKDtfFDHtrR+iOG1pu5MzkQyIwPA65+fs5vXmRyrz6BHv5whuv\nn3FpWwVwUg0kAETSf5q1ckZ8I8TB/lpPVi/lyv5VgYZJUtD5zEv5oYX2Kqdpf7+7\nvJvnNOqygTKC3qVDOhkord+PlaZLTQMrXXpwksko+QmJ8Tueti5OgItMM5DlqClZ\n0sU/Se4GShKysvjCVKQ7IpKiEYREZwQpGCK0WdZ8U6CknySaDu3hTJmqQCCIRbKb\ncVoJcraWehNgVwwMChJC+buwSIjLB0o41p9q0kJbOwKBgQDYGy7oTLqQ0RINUXAW\npiIht5NtO198LRpKCnX09sC0scyDPxgg8XrPnCq/kYwwH22fJamq/xldcwNEzyMx\nOnwwkHc3kRaRqQv9d1uGYZBOuqZWiAC0M7Jty2q78XFFzOoz7NJAmGuTR8G1+VHq\nXs7kCG5THo5jzArWzEv2WhhMjwKBgQC4aLHSGl62VCSzkJslUPY1Yy5+5m9uaVqL\njHNaU8qVtzewDBVtwcbIRZQSQJc1IM5nSp6mXwjMQSzz9MKd7/UnP6N3gppaA45S\nMemiGg5SnFPb5VDilPVDrg4ObltGHdl0nhWUiWPyV++f1d6rn2s9GHQmYJyxj4LF\nEXxBzQZi6wKBgHVevik4kxNYGZ/WHTSP4nXBiHaJCqEcteyEpe/3nE4HSvX1bJtn\ny7W6MZV97U+tohIPmIjgp9wTPTE/9vMjupN9wuIRENrnnzV4f+MKViAMS48vqoI0\nmbH8CuoshcLNOl4dP0wJ/FMvY8v7rzvFZkR/N7w5GkilZzWmG5Oe9xeNAoGAEqLJ\n7aCql6RzPQ5ND31aFFUcmshw1GijNN0RvzweifjFEO53r+rYSt71Ms8COOVC1p9s\n3wVVn0aq41CF5m4ciUXeIDK7pIMde+L9aFtXvTN9KgjHns5M5vUNCJpQcQqNMkLT\njXpA9nm6hp2XbiKjNL5m5oX2796/6Wh19TRiA9cCgYBjxUJuCTHZtev3hJEqLCDq\nU6uuxbjTcXaOOcp9r4t2xSzyhgjTII7j5sQjKYZ0R+UXa2QtlQsDrE3/HsuhCKlG\n1XyQ2yoL8hok9LHB/h3zLeo1i8vbZ42h3d0XhnkLJf7KQ4ZZPaSb7IUEDvxozYlR\n74AeLAdQk6DYhY7nTZauSg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "epi-371@investment-mbi.iam.gserviceaccount.com",
+  "client_id": "111803070980526910303",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/epi-371%40investment-mbi.iam.gserviceaccount.com"
+}
