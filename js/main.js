@@ -152,15 +152,15 @@ const goResult = () => {
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(point3);
-  const grade4 = 5 - (grade + 1);
-  const grade5 = sortResult4(point4);
+  const grade1 = 5 - (grade + 1);
+  const grade4 = sortResult4(point4);
   const grade2_2 = grade2 - 1;
   const grade3_2 = grade3 - 1;
-  const grade4_2 = grade5 - 1;
+  const grade4_2 = grade4 - 1;
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
-  const img_url = 'img/' + grade3 + '-' + grade2 + '-' + grade5 + '-' + grade4 + '.png';
+  const img_url = 'img/' + grade3 + '-' + grade2 + '-' + grade4 + '-' + grade1 + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
@@ -174,7 +174,7 @@ const goResult = () => {
   res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
-  desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" +  "<br>" + infoList2[grade2_2].desc + "<br>" + infoList3[grade3_2].desc;
+  desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc;
 
   setTimeout(() => {
     header.style.display = 'block';
