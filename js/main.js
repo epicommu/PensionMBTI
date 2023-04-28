@@ -165,6 +165,7 @@ const goResult = () => {
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
+  const desc2 = document.querySelector('.res');
 
   pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point + '%';
@@ -175,6 +176,7 @@ const goResult = () => {
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
   desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc;
+  desc2.innerHTML = infoList[grade].desc + infoList3[grade3_2].desc2 + infoList2[grade2_2].desc + infoList4[grade4_2].desc
 
   setTimeout(() => {
     header.style.display = 'block';
