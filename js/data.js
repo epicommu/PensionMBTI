@@ -175,7 +175,7 @@ const infoList3 = [
     name: '글로벌 주식 투자자',
     desc: '-주식: 어디든지 수익만 나면 되는 글로벌 주식 투자자',
     desc2: '글로벌주식지수(ACWI ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/iwN1zhK4-Oo'
   },
   {
     from: 1,
@@ -183,7 +183,7 @@ const infoList3 = [
     name: '한국 주식 투자자',
     desc: '-주식: 익숙한게 최고, 한국 주식 투자자',
     desc2: '한국주식지수(EWY ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/NsfvHf8o1W8'
   },
   {
     from: 2,
@@ -191,7 +191,7 @@ const infoList3 = [
     name: '미국 주식 투자자',
     desc: '-주식: 금융 중심지는 결국 월가, 미국 주식 투자자',
     desc2: '미국주식지수(SPY ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/ppFSYmtDj94'
   },
   {
     from: 3,
@@ -199,7 +199,7 @@ const infoList3 = [
     name: '중국 주식 투자자',
     desc: '-주식: 성장률이 높은 신흥국이 최고, 중국 주식 투자자',
     desc2: '중국주식지수(FXI ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/UDO6E1oUSn4'
   },
   {
     from: 4,
@@ -207,7 +207,7 @@ const infoList3 = [
     name: '유럽 주식 투자자',
     desc: '-주식: 안정적인 선진국이 좋아, 유럽 주식 투자자',
     desc2: '유럽주식지수(FEZ ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/AyB-whOxFjE'
   }
 ]
 
