@@ -304,7 +304,7 @@ const load = () => {
   u_name.addEventListener('blur', () => {
     try {
       if (u_name.value.length < 1) {
-        throw '이메일을 입력하고 시작해 주세요.';
+        throw '이름을 입력하고 시작해 주세요.';
       }
       msg.innerHTML = '';
     } catch (err) {
@@ -315,7 +315,7 @@ const load = () => {
   start_btn.addEventListener('click', () => {
     try {
       if (u_name.value.length < 1) {
-        throw '이메일을 입력하고 시작해 주세요.';
+        throw '이름을 입력하고 시작해 주세요.';
       }
       msg.innerHTML = '';
       start_btn.disabled = true;
