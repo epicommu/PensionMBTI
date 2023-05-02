@@ -131,35 +131,40 @@ const infoList2 = [
     to: 0,
     name: '예금 투자형',
     desc: '-채권: 예금처럼 안전한 초단기 국채 투자자',
-    desc2: '초단기 국채(SHV ETF)'
+    desc2: '초단기 국채(SHV ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 1,
     to: 1, 
     name: '단기 국채형',
     desc: '-채권: 이자수익과 일부 자본이익 원하는 단기 국채 투자자',
-    desc2: '단기 국채(SHY ETF)'
+    desc2: '단기 국채(SHY ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 2,
     to: 2, 
     name: '중장기 국채형',
     desc: '-채권: 이자수익과 자본이익 모두 중요한 중장기 국채 투자자',
-    desc2: '중장기 국채(IEF ETF)'
+    desc2: '중장기 국채(IEF ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 3,
     to: 3,
     name: '투자등급 회사채형',
     desc: '-채권: 누구나 알만한 안전한 회사의 투자등급 회사채 투자자',
-    desc2: '투자등급 회사채(LQD ETF)'
+    desc2: '투자등급 회사채(LQD ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 4,
     to: 4,
     name: '하이일드 회사채형',
     desc: '-채권: 신용위험은 높지만 금리가 높은 하이일드 채권 투자자',
-    desc2: '하이일드 회사채(HYG ETF)'
+    desc2: '하이일드 회사채(HYG ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   }
 ]
 
@@ -169,35 +174,40 @@ const infoList3 = [
     to: 0,
     name: '글로벌 주식 투자자',
     desc: '-주식: 어디든지 수익만 나면 되는 글로벌 주식 투자자',
-    desc2: '글로벌주식지수(ACWI ETF)'
+    desc2: '글로벌주식지수(ACWI ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 1,
     to: 1, 
     name: '한국 주식 투자자',
     desc: '-주식: 익숙한게 최고, 한국 주식 투자자',
-    desc2: '한국주식지수(EWY ETF)'
+    desc2: '한국주식지수(EWY ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 2,
     to: 2,
     name: '미국 주식 투자자',
     desc: '-주식: 금융 중심지는 결국 월가, 미국 주식 투자자',
-    desc2: '미국주식지수(SPY ETF)'
+    desc2: '미국주식지수(SPY ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 3,
     to: 3, 
     name: '중국 주식 투자자',
     desc: '-주식: 성장률이 높은 신흥국이 최고, 중국 주식 투자자',
-    desc2: '중국주식지수(FXI ETF)'
+    desc2: '중국주식지수(FXI ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 4,
     to: 4,
     name: '유럽 주식 투자자',
     desc: '-주식: 안정적인 선진국이 좋아, 유럽 주식 투자자',
-    desc2: '유럽주식지수(FEZ ETF)'
+    desc2: '유럽주식지수(FEZ ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   }
 ]
 
@@ -207,27 +217,31 @@ const infoList4 = [
     to: 0,
     name: '당신은... 동물원의 ',
     desc: '당신은 동물원에서 규칙적인 생활을 하고 있으며, ',
-    desc2: '금(GLD ETF)'
+    desc2: '금(GLD ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 1,
     to: 1, 
     name: '당신은... 애완 ',
     desc: '당신은 반려동물로 만나는 주인에 따라 삶이 바뀌며, ',
-    desc2: '미국 부동산 리츠지수(VNQ ETF)'
+    desc2: '미국 부동산 리츠지수(VNQ ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 2,
     to: 2,
     name: '당신은... 뒷산의 ',
     desc: '당신은 뒷산에 서식하여 때로는 풍족하게 먹이를 먹지만 때로는 굶어야 할 때도 있으며, ',
-    desc2: '원유(USO ETF)'
+    desc2: '원유(USO ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   },
   {
     from: 3,
     to: 3, 
     name: '당신은... 사바나의 ',
     desc: '당신은 사바나에 서식하여 왕으로 군림할 수도 잡아먹힐 수도 있으며, ',
-    desc2: '비트코인(BITO ETF)'
+    desc2: '비트코인(BITO ETF)',
+    link: 'https://www.youtube.com/@epiadvisor7225'
   }
 ]
