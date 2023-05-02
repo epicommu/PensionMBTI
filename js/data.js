@@ -132,7 +132,7 @@ const infoList2 = [
     name: '예금 투자형',
     desc: '-채권: 예금처럼 안전한 초단기 국채 투자자',
     desc2: '초단기 국채(SHV ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/0a2yaZhzBuI'
   },
   {
     from: 1,
@@ -140,7 +140,7 @@ const infoList2 = [
     name: '단기 국채형',
     desc: '-채권: 이자수익과 일부 자본이익 원하는 단기 국채 투자자',
     desc2: '단기 국채(SHY ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/buPqw1wsPwg'
   },
   {
     from: 2,
@@ -148,7 +148,7 @@ const infoList2 = [
     name: '중장기 국채형',
     desc: '-채권: 이자수익과 자본이익 모두 중요한 중장기 국채 투자자',
     desc2: '중장기 국채(IEF ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/JCKxyiOTdeg'
   },
   {
     from: 3,
@@ -156,7 +156,7 @@ const infoList2 = [
     name: '투자등급 회사채형',
     desc: '-채권: 누구나 알만한 안전한 회사의 투자등급 회사채 투자자',
     desc2: '투자등급 회사채(LQD ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/r4kUtX4Gwxk'
   },
   {
     from: 4,
@@ -164,7 +164,7 @@ const infoList2 = [
     name: '하이일드 회사채형',
     desc: '-채권: 신용위험은 높지만 금리가 높은 하이일드 채권 투자자',
     desc2: '하이일드 회사채(HYG ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/zL9OABgFzPM'
   }
 ]
 
