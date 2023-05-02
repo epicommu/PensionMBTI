@@ -83,8 +83,8 @@ const qnaList = [
     q: '12. 추가적으로 투자하고 싶은 대체자산은?',
     a: [
       { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 유가', score: 0, score2: 0, score3: 0, score4: 1 },
-      { answer: 'c. 부동산', score: 0, score2: 0, score3: 0, score4: 2 },
+      { answer: 'b. 부동산', score: 0, score2: 0, score3: 0, score4: 1 },
+      { answer: 'c. ', score: 0, score2: 0, score3: 0, score4: 2 },
       { answer: 'd. 비트코인', score: 0, score2: 0, score3: 0, score4: 3 }
     ]
   }
