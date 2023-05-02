@@ -2,90 +2,90 @@ const qnaList = [
   {
     q: '1. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 도지코인', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 도지코인', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '2. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 미국 국채', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 테슬라', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 미국 국채', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 테슬라', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '3. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 나스닥', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 비트코인', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 나스닥', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 비트코인', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '4. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 유가', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 유가', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '5. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 삼성전자', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 나스닥', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 삼성전자', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 나스닥', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '6. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 코스피', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 삼성전자', score: 10, score2: 0, score3: 0 }
+      { answer: 'a. 코스피', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 삼성전자', score: 10, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '7. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image001.jpg" alt="image001"><br>',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0 }
+      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
     ]
   },
   {
     q: '8. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image002.jpg" alt="image002"><br>',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0 }
+      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
     ]
   },
   {
     q: '9. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image003.jpg" alt="image003"><br>',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0 }
+      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
     ]
   },
   {
     q: '10. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image004.jpg" alt="image004"><br>',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0 }
+      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
     ]
   },
   {
     q: '11. 주식 자산 중 투자하고 싶은 지역은?',
     a: [
-      { answer: 'a. 글로벌', score: 0, score2: 0, score3: 0 },
-      { answer: 'b. 한국', score: 0, score2: 0, score3: 1 },
-      { answer: 'c. 미국', score: 0, score2: 0, score3: 2 },
-      { answer: 'd. 중국', score: 0, score2: 0, score3: 3 },
-      { answer: 'e. 유럽', score: 0, score2: 0, score3: 4 }
+      { answer: 'a. 글로벌', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 한국', score: 0, score2: 0, score3: 1, score4: 0 },
+      { answer: 'c. 미국', score: 0, score2: 0, score3: 2, score4: 0 },
+      { answer: 'd. 중국', score: 0, score2: 0, score3: 3, score4: 0 },
+      { answer: 'e. 유럽', score: 0, score2: 0, score3: 4, score4: 0 }
     ]
   },
   {
     q: '12. 추가적으로 투자하고 싶은 대체자산은?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score4: 0 },
-      { answer: 'b. 유가', score: 0, score2: 0, score4: 1 },
-      { answer: 'c. 부동산', score: 0, score2: 0, score4: 2 },
-      { answer: 'd. 비트코인', score: 0, score2: 0, score4: 3 }
+      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 유가', score: 0, score2: 0, score3: 0, score4: 1 },
+      { answer: 'c. 부동산', score: 0, score2: 0, score3: 0, score4: 2 },
+      { answer: 'd. 비트코인', score: 0, score2: 0, score3: 0, score4: 3 }
     ]
   }
 ]
