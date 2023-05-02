@@ -218,7 +218,7 @@ const infoList4 = [
     name: '당신은... 동물원의 ',
     desc: '당신은 동물원에서 규칙적인 생활을 하고 있으며, ',
     desc2: '금(GLD ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/xPDJp3Whgdk'
   },
   {
     from: 1,
@@ -226,7 +226,7 @@ const infoList4 = [
     name: '당신은... 애완 ',
     desc: '당신은 반려동물로 만나는 주인에 따라 삶이 바뀌며, ',
     desc2: '미국 부동산 리츠지수(VNQ ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/4EbDM47AJIo'
   },
   {
     from: 2,
@@ -234,7 +234,7 @@ const infoList4 = [
     name: '당신은... 뒷산의 ',
     desc: '당신은 뒷산에 서식하여 때로는 풍족하게 먹이를 먹지만 때로는 굶어야 할 때도 있으며, ',
     desc2: '원유(USO ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/svaHyCpJL10'
   },
   {
     from: 3,
