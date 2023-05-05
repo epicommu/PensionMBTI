@@ -13,6 +13,17 @@
   background: #fff;
   animation: fade-in 0.3s ease-in-out;
 }
+
+.status-bar:before {
+  content: "ETF Platform Innovator";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .status {
   height: 100%;
   border-radius: 20px;
