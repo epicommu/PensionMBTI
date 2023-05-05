@@ -242,6 +242,6 @@ const infoList4 = [
     name: '당신은... 사바나의 ',
     desc: '당신은 사바나에 서식하여 왕으로 군림할 수도 잡아먹힐 수도 있으며, ',
     desc2: '비트코인(BITO ETF)',
-    link: 'https://www.youtube.com/@epiadvisor7225'
+    link: 'https://youtu.be/92m94Fmg3gs'
   }
 ]
