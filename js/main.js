@@ -167,9 +167,9 @@ const goResult = () => {
   const desc = document.querySelector('.res');
   const desc2 = document.querySelector('.res');
 
-  pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
+  /* pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point + '%';
-  pin.style.marginLeft = point + '%';
+  pin.style.marginLeft = point + '%'; */
   res_img.src = img_url;
   res_img.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
