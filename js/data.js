@@ -173,7 +173,7 @@ const infoList3 = [
     from: 0,
     to: 0,
     name: 'N',
-    desc: 'N: 성장성이 높은 주식을 선호하는 성장주 투자자' + '<br>' + '(주식자산: 글로벌 주식)',
+    desc: '- N: 성장성이 높은 주식을 선호하는 성장주 투자자' + '<br>' + '(주식자산: 글로벌 주식)',
     desc2: '글로벌주식지수(ACWI ETF)',
     link: 'https://youtu.be/iwN1zhK4-Oo'
   },
@@ -181,7 +181,7 @@ const infoList3 = [
     from: 1,
     to: 1, 
     name: 'S',
-    desc: 'S: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 한국 주식)',
+    desc: '- S: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 한국 주식)',
     desc2: '한국주식지수(EWY ETF)',
     link: 'https://youtu.be/NsfvHf8o1W8'
   },
@@ -189,7 +189,7 @@ const infoList3 = [
     from: 2,
     to: 2,
     name: 'N',
-    desc: 'N: 성장성이 높은 주식을 선호하는 성장주 투자자' + '<br>' + '(주식자산: 미국 주식)',
+    desc: '- N: 성장성이 높은 주식을 선호하는 성장주 투자자' + '<br>' + '(주식자산: 미국 주식)',
     desc2: '미국주식지수(SPY ETF)',
     link: 'https://youtu.be/ppFSYmtDj94'
   },
@@ -197,7 +197,7 @@ const infoList3 = [
     from: 3,
     to: 3, 
     name: 'S',
-    desc: 'S: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 중국 주식)',
+    desc: '- S: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 중국 주식)',
     desc2: '중국주식지수(FXI ETF)',
     link: 'https://youtu.be/UDO6E1oUSn4'
   },
@@ -205,7 +205,7 @@ const infoList3 = [
     from: 4,
     to: 4,
     name: 'N',
-    desc: 'N: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 유럽 주식)',
+    desc: '- N: 저평가된 주식을 선호하는 가치주 투자자' + '<br>' + '(주식자산: 유럽 주식)',
     desc2: '유럽주식지수(FEZ ETF)',
     link: 'https://youtu.be/AyB-whOxFjE'
   }
@@ -216,7 +216,7 @@ const infoList4 = [
     from: 0,
     to: 0,
     name: 'J',
-    desc: 'J: 안전한 대체자산을 선호하는 장기 투자자' + '<br>' + '(대체자산: 금 투자자)',
+    desc: '- J: 안전한 대체자산을 선호하는 장기 투자자' + '<br>' + '(대체자산: 금 투자자)',
     desc2: '금(GLD ETF)',
     link: 'https://youtu.be/xPDJp3Whgdk'
   },
@@ -224,7 +224,7 @@ const infoList4 = [
     from: 1,
     to: 1, 
     name: 'J',
-    desc: 'J: 안전한 대체자산을 선호하는 장기 투자자' + '<br>' + '(대체자산: 부동산 리츠 투자자)',
+    desc: '- J: 안전한 대체자산을 선호하는 장기 투자자' + '<br>' + '(대체자산: 부동산 리츠 투자자)',
     desc2: '미국 부동산 리츠지수(VNQ ETF)',
     link: 'https://youtu.be/4EbDM47AJIo'
   },
@@ -232,7 +232,7 @@ const infoList4 = [
     from: 2,
     to: 2,
     name: 'P',
-    desc: 'P: 변동성이 높은 대체자산을 활용하는 단기 수익추구형 투자자' + '<br>' + '(대체자산: 원유 투자자)',
+    desc: '- P: 변동성이 높은 대체자산을 활용하는 단기 수익추구형 투자자' + '<br>' + '(대체자산: 원유 투자자)',
     desc2: '원유(USO ETF)',
     link: 'https://youtu.be/svaHyCpJL10'
   },
@@ -240,7 +240,7 @@ const infoList4 = [
     from: 3,
     to: 3, 
     name: 'P',
-    desc: 'P: 변동성이 높은 대체자산을 활용하는 단기 수익추구형 투자자' + '<br>' + '(대체자산: 비트코인 투자자)',
+    desc: '- P: 변동성이 높은 대체자산을 활용하는 단기 수익추구형 투자자' + '<br>' + '(대체자산: 비트코인 투자자)',
     desc2: '비트코인(BITO ETF)',
     link: 'https://youtu.be/92m94Fmg3gs'
   }
