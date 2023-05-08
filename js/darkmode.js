@@ -20,4 +20,4 @@ const isDarkMode = () =>
     ? goDark() : goLight();
 // const switchMode = () => flag ? goLight() : goDark();
 
-isDarkMode();
+goLight(); // 디폴트로 다크모드 해제된 상태로 시작합니다.
