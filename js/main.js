@@ -161,11 +161,14 @@ const goResult = () => {
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
   const img_url = 'img/' + grade3 + '-' + grade2 + '-' + grade4 + '-' + grade1 + '.png';
+  const img2_url = 'img/MBTI.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
   const desc2 = document.querySelector('.res');
+  const res_img2 = document.createElement('img');
+  const res_img2_div = document.querySelector('.art2');
 
   /* 
   pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
@@ -178,7 +181,10 @@ const goResult = () => {
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;  
   desc.innerHTML = infoList[grade].desc + "<br>" + "<br>" + infoList3[grade3_2].desc + "<br>" + "<br>" + infoList2[grade2_2].desc + "<br>" + "<br>" + infoList4[grade4_2].desc + "<br>" + "<br>" + "<span style='color:red;'><strong>구성자산</strong><br>※ 아래 자산을 클릭하면 관련 정보를 자세히 알 수 있습니다.</span>" + "<br>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'><span style='color:red'>-&gt;</span>" + infoList3[grade3_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<a href='" + infoList2[grade2_2].link + "'><span style='color:red'>-&gt;</span>" + infoList2[grade2_2].desc2 + "<span style='color:red'>&lt;-</span></a>"+ "<br>" + "<a href='" + infoList4[grade4_2].link + "'><span style='color:red'>-&gt;</span>" + infoList4[grade4_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<br>" + "아직 수정 중인 베타 버전입니다.<br>이용 후기 및 개선사항을 알려주시면,<br>추첨을 통해 선물을 드릴 예정입니다." + "<br>" + "<br>" + "<a href='https://docs.google.com/forms/d/e/1FAIpQLSf0W1tIlUFk0-IngEx629bqrS6HeYbhccwSCq1fnnnl6hlV9w/viewform?usp=sf_link'" + "'><span style='color:red'>-&gt;</span>" + "<이벤트 참여하기>" + "를 클릭해주세요." + "<span style='color:red'>&lt;-</span></a>";
-
+  res_img2.src = img2_url;
+  res_img2.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img2.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img2_div.appendChild(res_img2);
 
   setTimeout(() => {
     header.style.display = 'block';
