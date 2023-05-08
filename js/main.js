@@ -171,10 +171,11 @@ const goResult = () => {
   res_point.innerHTML = point + '%';
   pin.style.marginLeft = point + '%';
   res_img.src = img_url;
-  res_img.alt = infoList4[grade4_2].name + infoList[grade].name;
-  res_img.title = infoList4[grade4_2].name + infoList[grade].name;
+  res_img.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;  desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + "<br>" + "<span style='color:red;'><구성자산><br>※ 아래 자산을 클릭하면 관련 정보를 자세히 알 수 있습니다.</span>" + "<br>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'>" + infoList3[grade3_2].desc2 + "<br>" + "<a href='" + infoList2[grade2_2].link + "'>" + infoList2[grade2_2].desc2 + "<br>" + "<a href='" + infoList4[grade4_2].link + "'>" + infoList4[grade4_2].desc2 + "</a>" + "<br>" + "<br>" + "아직 수정 중인 베타 버전입니다.<br>이용 후기 및 개선사항을 알려주시면,<br>추첨을 통해 5분께 스타벅스 커피를 선물로 드릴 예정입니다." + "<br>" + "<br>" + "<a href='https://docs.google.com/forms/d/e/1FAIpQLSf0W1tIlUFk0-IngEx629bqrS6HeYbhccwSCq1fnnnl6hlV9w/viewform?usp=sf_link'>" + "<이벤트 참여하기>" + "를 클릭해주세요.  ";
+  animal.innerHTML = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;  
+  desc.innerHTML = infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList4[grade4_2].desc + "<br>" + "<br>" + "<span style='color:red;'><구성자산><br>※ 아래 자산을 클릭하면 관련 정보를 자세히 알 수 있습니다.</span>" + "<br>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'>" + infoList3[grade3_2].desc2 + "<br>" + "<a href='" + infoList2[grade2_2].link + "'>" + infoList2[grade2_2].desc2 + "<br>" + "<a href='" + infoList4[grade4_2].link + "'>" + infoList4[grade4_2].desc2 + "</a>" + "<br>" + "<br>" + "아직 수정 중인 베타 버전입니다.<br>이용 후기 및 개선사항을 알려주시면,<br>추첨을 통해 5분께 스타벅스 커피를 선물로 드릴 예정입니다." + "<br>" + "<br>" + "<a href='https://docs.google.com/forms/d/e/1FAIpQLSf0W1tIlUFk0-IngEx629bqrS6HeYbhccwSCq1fnnnl6hlV9w/viewform?usp=sf_link'>" + "<이벤트 참여하기>" + "를 클릭해주세요.  ";
 
 
   setTimeout(() => {
