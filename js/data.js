@@ -65,8 +65,8 @@ const qnaList = [
   {
     q: '10. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 한국 3년 만기 국고채(금리 3.2%)', score: 0, score5: 0 },
-      { answer: 'b. 브라질 3년 만기 국채(금리 11.5%)', score: 10, score5: 1 }
+      { answer: 'a. 한국 3년 만기 국고채(금리 3.2%)', score: 0 },
+      { answer: 'b. 브라질 3년 만기 국채(금리 11.5%)', score: 10 }
     ]
   },
   {
