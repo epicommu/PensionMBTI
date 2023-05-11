@@ -110,10 +110,10 @@ const qnaList = [
   {
     q: '16. 추가적으로 투자하고 싶은 대체자산은?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 부동산', score: 0, score2: 0, score3: 0, score4: 1 },
-      { answer: 'c. 원유', score: 0, score2: 0, score3: 0, score4: 2 },
-      { answer: 'd. 비트코인', score: 0, score2: 0, score3: 0, score4: 3 }
+      { answer: 'a. 금', score4: 0 },
+      { answer: 'b. 부동산', score4: 1 },
+      { answer: 'c. 원유', score4: 2 },
+      { answer: 'd. 비트코인', score4: 3 }
     ]
   }
 ]
@@ -201,7 +201,7 @@ const infoList3 = [
     from: 0,
     to: 0,
     name: 'N',
-    desc: '- N: 성장주 투자자로 성장성이 높은 주식을 선호합니다.' + '<br>' + '(주식자산: 글로벌 주식)',
+    desc: '- N: 성장주 투자자로 성장성이 높은 주식을 선호합니다.',
     desc2: '글로벌주식지수(ACWI ETF)',
     link: 'https://youtu.be/iwN1zhK4-Oo'
   },
@@ -209,7 +209,7 @@ const infoList3 = [
     from: 1,
     to: 1, 
     name: 'S',
-    desc: '- S: 가치주 투자자로 저평가된 주식을 선호합니다.' + '<br>' + '(주식자산: 한국 주식)',
+    desc: '- S: 가치주 투자자로 저평가된 주식을 선호합니다.',
     desc2: '한국주식지수(EWY ETF)',
     link: 'https://youtu.be/NsfvHf8o1W8'
   },
@@ -217,7 +217,7 @@ const infoList3 = [
     from: 2,
     to: 2,
     name: 'N',
-    desc: '- N: 성장주 투자자로 성장성이 높은 주식을 선호합니다.' + '<br>' + '(주식자산: 미국 주식)',
+    desc: '- N: 성장주 투자자로 성장성이 높은 주식을 선호합니다.',
     desc2: '미국주식지수(SPY ETF)',
     link: 'https://youtu.be/ppFSYmtDj94'
   },
@@ -225,7 +225,7 @@ const infoList3 = [
     from: 3,
     to: 3, 
     name: 'S',
-    desc: '- S: 가치주 투자자로 저평가된 주식을 선호합니다.' + '<br>' + '(주식자산: 중국 주식)',
+    desc: '- S: 가치주 투자자로 저평가된 주식을 선호합니다.',
     desc2: '중국주식지수(FXI ETF)',
     link: 'https://youtu.be/UDO6E1oUSn4'
   },
@@ -233,7 +233,7 @@ const infoList3 = [
     from: 4,
     to: 4,
     name: 'N',
-    desc: '- N: 가치주 투자자로 저평가된 주식을 선호합니다.' + '<br>' + '(주식자산: 유럽 주식)',
+    desc: '- N: 가치주 투자자로 저평가된 주식을 선호합니다.',
     desc2: '유럽주식지수(FEZ ETF)',
     link: 'https://youtu.be/AyB-whOxFjE'
   }
@@ -244,7 +244,7 @@ const infoList4 = [
     from: 0,
     to: 0,
     name: 'J',
-    desc: '- J: 저변동성의 안전한 대체자산을 선호합니다.' + '<br>' + '(대체자산: 금 투자자)',
+    desc: '- J: 저변동성의 안전한 대체자산을 선호합니다.',
     desc2: '금(GLD ETF)',
     link: 'https://youtu.be/xPDJp3Whgdk'
   },
@@ -252,7 +252,7 @@ const infoList4 = [
     from: 1,
     to: 1, 
     name: 'J',
-    desc: '- J: 저변동성의 안전한 대체자산을 선호합니다.' + '<br>' + '(대체자산: 부동산 리츠 투자자)',
+    desc: '- J: 저변동성의 안전한 대체자산을 선호합니다.',
     desc2: '미국 부동산 리츠지수(VNQ ETF)',
     link: 'https://youtu.be/4EbDM47AJIo'
   },
@@ -260,7 +260,7 @@ const infoList4 = [
     from: 2,
     to: 2,
     name: 'P',
-    desc: '- P: 변동성이 높지만 기대 성과가 높은 대체자산을 선호합니다.' + '<br>' + '(대체자산: 원유 투자자)',
+    desc: '- P: 변동성이 높지만 기대 성과가 높은 대체자산을 선호합니다.',
     desc2: '원유(USO ETF)',
     link: 'https://youtu.be/svaHyCpJL10'
   },
@@ -268,7 +268,7 @@ const infoList4 = [
     from: 3,
     to: 3, 
     name: 'P',
-    desc: '- P: 변동성이 높지만 기대 성과가 높은 대체자산을 선호합니다.' + '<br>' + '(대체자산: 비트코인 투자자)',
+    desc: '- P: 변동성이 높지만 기대 성과가 높은 대체자산을 선호합니다.',
     desc2: '비트코인(BITO ETF)',
     link: 'https://youtu.be/92m94Fmg3gs'
   }
