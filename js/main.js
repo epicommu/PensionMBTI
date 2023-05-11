@@ -145,20 +145,10 @@ const sortResult4 = (point4) => {
 
 const sortResult5 = (point5) => {
   let num5 = 1;
-  if (point5 == 0) {
+  if (point5 <= 2) {
     num5 = 1;
-  } else if (point5 == 1) {
-    num5 = 2;
-  } else if (point5 == 2) {
-    num5 = 3;
-  } else if (point5 == 3) {
-    num5 = 4;
-  } else if (point5 == 4) {
-    num5 = 5;
-  } else if (point5 == 5) {
-    num5 = 6;
   } else {
-    num5 = 7;
+    num5 = 2;
   }
   return num5;
 }
