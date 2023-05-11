@@ -75,6 +75,14 @@ const calcScore4 = () => {
   return point4;
 }
 
+const calcScore5 = () => {
+  let point5 = 0;
+  for (let i = 0; i < ENDPOINT; i++) {
+    point4 += qnaList[i].a[select[i]].score5;
+  }
+  return point5;
+}
+
 const sortResult = (point) => {
   let num = 0;
   if (point <= 10) {
@@ -135,6 +143,20 @@ const sortResult4 = (point4) => {
   return num4;
 }
 
+const sortResult5 = (point5) => {
+  let num5 = 1;
+  if (point5 == 0) {
+    num5 = 1;
+  } else if (point5 == 1) {
+    num5 = 2;
+  } else if (point5 == 2) {
+    num5 = 3;
+  } else {
+    num5 = 4;
+  }
+  return num5;
+}
+
 const goResult = () => {
   if (pcMQL.matches) {
     console.log('PC');
@@ -149,14 +171,17 @@ const goResult = () => {
   const point2 = calcScore2();
   const point3 = calcScore3();
   const point4 = calcScore4();
+  const point5 = calcScore5();
   const grade = sortResult(point);
   const grade2 = sortResult2(point2);
   const grade3 = sortResult3(point3);
   const grade1 = 5 - (grade + 1);
   const grade4 = sortResult4(point4);
+  const grade5 = sortResult5(point5);
   const grade2_2 = grade2 - 1;
   const grade3_2 = grade3 - 1;
   const grade4_2 = grade4 - 1;
+  const grade5_2 = grade5 - 1;
   const pTitle = document.querySelector('.p');
   const res_point = document.querySelector('.point');
   const pin = document.querySelector('.pin');
@@ -176,14 +201,14 @@ const goResult = () => {
   pin.style.marginLeft = point + '%'; 
   */
   res_img.src = img_url;
-  res_img.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
-  res_img.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img.alt = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img.title = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img_div.appendChild(res_img);
-  animal.innerHTML = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;  
-  desc.innerHTML = infoList[grade].desc + "<br>" + "<br>" + infoList3[grade3_2].desc + "<br>" + "<br>" + infoList2[grade2_2].desc + "<br>" + "<br>" + infoList4[grade4_2].desc + "<br>" + "<br>" + "<span style='color:red;'><strong>구성자산</strong><br>※ 아래 자산을 클릭하면 관련 정보를 자세히 알 수 있습니다.</span>" + "<br>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'><span style='color:red'>-&gt;</span>" + infoList3[grade3_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<a href='" + infoList2[grade2_2].link + "'><span style='color:red'>-&gt;</span>" + infoList2[grade2_2].desc2 + "<span style='color:red'>&lt;-</span></a>"+ "<br>" + "<a href='" + infoList4[grade4_2].link + "'><span style='color:red'>-&gt;</span>" + infoList4[grade4_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<br>" + "아직 수정 중인 베타 버전입니다.<br>이용 후기 및 개선사항을 알려주시면,<br>추첨을 통해 선물을 드릴 예정입니다." + "<br>" + "<br>" + "<a href='https://docs.google.com/forms/d/e/1FAIpQLSf0W1tIlUFk0-IngEx629bqrS6HeYbhccwSCq1fnnnl6hlV9w/viewform?usp=sf_link'" + "'><span style='color:red'>-&gt;</span>" + "<이벤트 참여하기>" + "를 클릭해주세요." + "<span style='color:red'>&lt;-</span></a>";
+  animal.innerHTML = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;  
+  desc.innerHTML = infoList[grade].desc + "<br>" + "<br>" + infoList5[grade5_2].desc + "<br>" + "<br>" + infoList2[grade2_2].desc + "<br>" + "<br>" + infoList4[grade4_2].desc + "<br>" + "<br>" + "<span style='color:red;'><strong>구성자산</strong><br>※ 아래 자산을 클릭하면 관련 정보를 자세히 알 수 있습니다.</span>" + "<br>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'><span style='color:red'>-&gt;</span>" + infoList3[grade3_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<a href='" + infoList2[grade2_2].link + "'><span style='color:red'>-&gt;</span>" + infoList2[grade2_2].desc2 + "<span style='color:red'>&lt;-</span></a>"+ "<br>" + "<a href='" + infoList4[grade4_2].link + "'><span style='color:red'>-&gt;</span>" + infoList4[grade4_2].desc2 + "<span style='color:red'>&lt;-</span></a>" + "<br>" + "<br>" + "아직 수정 중인 베타 버전입니다.<br>이용 후기 및 개선사항을 알려주시면,<br>추첨을 통해 선물을 드릴 예정입니다." + "<br>" + "<br>" + "<a href='https://docs.google.com/forms/d/e/1FAIpQLSf0W1tIlUFk0-IngEx629bqrS6HeYbhccwSCq1fnnnl6hlV9w/viewform?usp=sf_link'" + "'><span style='color:red'>-&gt;</span>" + "<이벤트 참여하기>" + "를 클릭해주세요." + "<span style='color:red'>&lt;-</span></a>";
   res_img2.src = img2_url;
-  res_img2.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
-  res_img2.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img2.alt = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
+  res_img2.title = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img2_div.appendChild(res_img2);
 
   setTimeout(() => {
