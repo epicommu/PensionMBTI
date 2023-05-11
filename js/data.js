@@ -166,7 +166,7 @@ const infoList2 = [
     from: 1,
     to: 1, 
     name: 'T',
-    desc: '- T: 국채 투자형으로 안전한 채권을 선호합니다.' + '<br>' + '(채권자산: 이자수익과 일부 자본이익 원하는 단기 국채 투자자)',
+    desc: '- T: 국채 투자형으로 안전한 채권을 선호합니다.',
     desc2: '단기 국채(SHY ETF)',
     link: 'https://youtu.be/buPqw1wsPwg'
   },
@@ -174,7 +174,7 @@ const infoList2 = [
     from: 2,
     to: 2, 
     name: 'T',
-    desc: '- T: 국채 투자형으로 안전한 채권을 선호합니다.' + '<br>' + '(채권자산: 이자수익과 자본이익 모두 중요한 중장기 국채 투자자)',
+    desc: '- T: 국채 투자형으로 안전한 채권을 선호합니다.',
     desc2: '중장기 국채(IEF ETF)',
     link: 'https://youtu.be/JCKxyiOTdeg'
   },
@@ -182,7 +182,7 @@ const infoList2 = [
     from: 3,
     to: 3,
     name: 'F',
-    desc: '- F: 회사채 투자형으로 위험하더라도 고금리의 채권을 선호합니다.' + '<br>' + '(채권자산: 누구나 알만한 안전한 회사의 투자등급 회사채 투자자)',
+    desc: '- F: 회사채 투자형으로 위험하더라도 고금리의 채권을 선호합니다.',
     desc2: '투자등급 회사채(LQD ETF)',
     link: 'https://youtu.be/r4kUtX4Gwxk'
   },
@@ -190,7 +190,7 @@ const infoList2 = [
     from: 4,
     to: 4,
     name: 'F',
-    desc: '- F: 회사채 투자형으로 위험하더라도 고금리의 채권을 선호합니다.' + '<br>' + '(채권자산: 신용위험은 높지만 금리가 높은 하이일드 채권 투자자)',
+    desc: '- F: 회사채 투자형으로 위험하더라도 고금리의 채권을 선호합니다.',
     desc2: '하이일드 회사채(HYG ETF)',
     link: 'https://youtu.be/zL9OABgFzPM'
   }
