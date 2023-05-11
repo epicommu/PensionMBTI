@@ -2,85 +2,113 @@ const qnaList = [
   {
     q: '1. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 도지코인', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 금', score: 0 },
+      { answer: 'b. 비트코인', score: 10 }
     ]
   },
   {
     q: '2. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 미국 국채', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 테슬라', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 미국 국채', score: 0 },
+      { answer: 'b. 테슬라', score: 10 }
     ]
   },
   {
     q: '3. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 나스닥', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 비트코인', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 금', score: 0 },
+      { answer: 'b. 유가', score: 10 }
     ]
   },
   {
     q: '4. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 유가', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. S&P 500', score: 0, score5: 0 },
+      { answer: 'b. 나스닥', score: 10, score5: 1 }
     ]
   },
   {
     q: '5. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 삼성전자', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 나스닥', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 코스피', score: 0, score5: 0 },
+      { answer: 'b. 삼성전자', score: 10, score5: 1 }
     ]
   },
   {
     q: '6. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 코스피', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 삼성전자', score: 10, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 코카콜라', score: 0, score5: 0 },
+      { answer: 'b. 아마존', score: 10, score5: 1 }
     ]
   },
   {
-    q: '7. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image001.jpg" alt="image001"><br>',
+    q: '7. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
+      { answer: 'a. 인텔', score: 0, score5: 0 },
+      { answer: 'b. 넷플릭스', score: 10, score5: 1 }
     ]
   },
   {
-    q: '8. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image002.jpg" alt="image002"><br>',
+    q: '8. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
+      { answer: 'a. 신한지주', score: 0, score5: 0 },
+      { answer: 'b. 카카오', score: 10, score5: 1 }
     ]
   },
   {
-    q: '9. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image003.jpg" alt="image003"><br>',
+    q: '9. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
+      { answer: 'a. 반도체 테마', score: 0, score5: 0 },
+      { answer: 'b. 2차전지 테마', score: 10, score5: 1 }
     ]
   },
   {
-    q: '10. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image004.jpg" alt="image004"><br>',
+    q: '10. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'A', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'B', score: 10, score2: 1, score3: 0, score4: 0 }
+      { answer: 'a. 한국 3년 만기 국고채(금리 3.2%)', score: 0, score5: 0 },
+      { answer: 'b. 브라질 3년 만기 국채(금리 11.5%)', score: 10, score5: 1 }
     ]
   },
   {
-    q: '11. 주식 자산 중 투자하고 싶은 지역은?',
+    q: '11. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image001.jpg" alt="image001"><br>',
     a: [
-      { answer: 'a. 글로벌', score: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 한국', score: 0, score2: 0, score3: 1, score4: 0 },
-      { answer: 'c. 미국', score: 0, score2: 0, score3: 2, score4: 0 },
-      { answer: 'd. 중국', score: 0, score2: 0, score3: 3, score4: 0 },
-      { answer: 'e. 유럽', score: 0, score2: 0, score3: 4, score4: 0 }
+      { answer: 'A', score2: 0 },
+      { answer: 'B', score2: 1 }
     ]
   },
   {
-    q: '12. 추가적으로 투자하고 싶은 대체자산은?',
+    q: '12. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image002.jpg" alt="image002"><br>',
+    a: [
+      { answer: 'A', score2: 0 },
+      { answer: 'B', score2: 1 }
+    ]
+  },
+  {
+    q: '13. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image003.jpg" alt="image003"><br>',
+    a: [
+      { answer: 'A', score2: 0 },
+      { answer: 'B', score2: 1 }
+    ]
+  },
+  {
+    q: '14. 채권 투자시 둘 중 하나를 고른다면?<br><br><img src="img/image004.jpg" alt="image004"><br>',
+    a: [
+      { answer: 'A', score2: 0 },
+      { answer: 'B', score2: 1 }
+    ]
+  },
+  {
+    q: '15. 주식 자산 중 투자하고 싶은 지역은?',
+    a: [
+      { answer: 'a. 글로벌', score3: 0 },
+      { answer: 'b. 한국', score3: 1 },
+      { answer: 'c. 미국', score3: 2 },
+      { answer: 'd. 중국', score3: 3 },
+      { answer: 'e. 유럽', score3: 4 }
+    ]
+  },
+  {
+    q: '16. 추가적으로 투자하고 싶은 대체자산은?',
     a: [
       { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 부동산', score: 0, score2: 0, score3: 0, score4: 1 },
