@@ -151,8 +151,14 @@ const sortResult5 = (point5) => {
     num5 = 2;
   } else if (point5 == 2) {
     num5 = 3;
-  } else {
+  } else if (point5 == 3) {
     num5 = 4;
+  } else if (point5 == 4) {
+    num5 = 5;
+  } else if (point5 == 5) {
+    num5 = 6;
+  } else {
+    num5 = 7;
   }
   return num5;
 }
