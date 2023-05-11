@@ -18,6 +18,6 @@ const isDarkMode = () =>
   (window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches)
     ? goDark() : goLight();
-// const switchMode = () => flag ? goLight() : goDark();
+const switchMode = () => flag ? goLight() : goDark();
 
 goLight(); // 디폴트로 다크모드 해제된 상태로 시작합니다.
