@@ -78,7 +78,7 @@ const calcScore4 = () => {
 const calcScore5 = () => {
   let point5 = 0;
   for (let i = 0; i < ENDPOINT; i++) {
-    point4 += qnaList[i].a[select[i]].score5;
+    point5 += qnaList[i].a[select[i]].score5;
   }
   return point5;
 }
