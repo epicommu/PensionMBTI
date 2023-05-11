@@ -285,7 +285,7 @@ const infoList5 = [
   },
   {
     from: 3,
-    to: 5, 
+    to: 6, 
     name: 'N',
     desc: '- N: 성장주 투자자로 성장성이 높은 주식을 선호합니다.',
     desc2: '',
