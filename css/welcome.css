@@ -60,6 +60,24 @@ hr {
   animation: fade-in 0.4s ease-out 0.9s both, 
           going-down 0.4s ease-out 0.9s both;
 }
+
+.art2 {
+  margin-bottom: 40px;
+  width: 100%;
+  max-height: 600px;
+  box-shadow: #ddd 0px 0px 10px 5px;
+  background-color: #fff;
+  animation: fade-in 0.3s ease-out 3.2s both, 
+          going-down 0.3s ease-out 3.2s both;
+  opacity: 0;
+}
+.art2 > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #welcome > p:first-of-type {
   padding: 0 5%;
   line-height: 19.2px;
@@ -222,6 +240,11 @@ hr {
     font-size: 32px;
     font-size: 2rem;
   }
+  
+  .art2 {
+    max-height: 1100px;
+  }
+  
   #welcome > p:first-of-type {
     padding: 0 12.5%;
     line-height: 22.4px;
@@ -249,6 +272,11 @@ hr {
     font-size: 59.2px;
     font-size: 3.7rem;
   }
+  
+  .art2 {
+    max-height: 1500px;
+  }
+  
   .sec-tit {
     line-height: 64px;
     line-height: 4rem;
@@ -321,6 +349,13 @@ hr {
     font-size: 67.2px;
     font-size: 4.2rem;
   }
+  
+  .art2 {
+    margin: 0 5% 50px 5%;
+    width: 90%;
+    max-height: 2000px;
+  }
+  
   .sec-tit {
     line-height: 56px;
     line-height: 3.5rem;
