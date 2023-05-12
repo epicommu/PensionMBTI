@@ -30,7 +30,7 @@ const qnaList = [
   {
     q: '5. 둘 중 하나만 투자한다면?',
     a: [
-      { answer: 'a. 코스피', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'a. 예금(적금)', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 삼성전자', score: 10, score5: 1, score2: 0, score3: 0, score4: 0 }
     ]
   },
