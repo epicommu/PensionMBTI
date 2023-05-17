@@ -191,11 +191,11 @@ const goResult = () => {
   const res_img2 = document.createElement('img');
   const res_img2_div = document.querySelector('.art2');
 
-  
-  pTitle.innerHTML = '당신의 예금 비중은...';
+  /*
+  pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
   res_point.innerHTML = point/2 + '%';
   pin.style.marginLeft = point/2 + '%'; 
-  
+  */
   res_img.src = img_url;
   res_img.alt = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img.title = infoList[grade].name + infoList3[grade3_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
