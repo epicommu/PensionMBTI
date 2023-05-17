@@ -193,7 +193,7 @@ const goResult = () => {
 
   
   pTitle.innerHTML = '당신의 자산 비중 분석';
-  res_point.innerHTML = '예금 비중:' + (point / 2) + '% / 투자 비중: ' + (100 - point / 2) + '% ';
+  res_point.innerHTML = '예금 비중: ' + (point / 2) + '% / 투자 비중: ' + (100 - point / 2) + '% ';
   pin.style.marginLeft = point/2 + '%'; 
   
   res_img.src = img_url;
