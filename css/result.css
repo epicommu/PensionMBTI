@@ -19,7 +19,7 @@
 #score-box > .point {
   margin: 10px 0 50px 0;
   font-size: 24px;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bolder;
   animation: fade-in 0.6s ease-out 1.8s forwards, 
           going-down 0.6s ease-out 1.8s forwards;
@@ -271,7 +271,7 @@
 @media all and (min-width: 768px) {
   #score-box > .point {
     font-size: 24px;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
   .pin {
     width: 40px; 
@@ -336,7 +336,7 @@
 @media all and (min-width: 1024px) {
   #score-box > .point {
     font-size: 30px;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .pin {
     width: 50px; 
@@ -397,7 +397,7 @@
 @media all and (min-width: 1440px) {
   #score-box > .point {
     font-size: 35px;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
   }
   .art {
     max-height: 2000px;
