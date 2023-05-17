@@ -192,7 +192,7 @@ const goResult = () => {
   const res_img2_div = document.querySelector('.art2');
 
   
-  pTitle.innerHTML = u_name.value + ' 님의 위험선호도는...';
+  pTitle.innerHTML = u_name.value + ' 님의 예금 비중은...';
   res_point.innerHTML = point/2 + '%';
   pin.style.marginLeft = point/2 + '%'; 
   
