@@ -192,8 +192,8 @@ const goResult = () => {
   const res_img2_div = document.querySelector('.art2');
 
   
-  pTitle.innerHTML = u_name.value + ' 님의 예금 비중은...';
-  res_point.innerHTML = point/2 + '%';
+  pTitle.innerHTML = u_name.value + ' 님의 포트폴리오 분석';
+  res_point.innerHTML = '예금 비중: point / 2 + '%, 위험자산 비중: ' + (100 - point / 2) + '% ';
   pin.style.marginLeft = point/2 + '%'; 
   
   res_img.src = img_url;
