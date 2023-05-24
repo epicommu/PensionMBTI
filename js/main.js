@@ -145,7 +145,7 @@ const sortResult4 = (point4) => {
 
 const sortResult5 = (point5) => {
   let num5 = 1;
-  if (point5 <= 2) {
+  if (point5 <= 3) {
     num5 = 1;
   } else {
     num5 = 2;
