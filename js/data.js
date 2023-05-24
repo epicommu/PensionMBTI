@@ -244,8 +244,8 @@ const infoList3 = [
   {
     from: 4,
     to: 4,
-    name: 'N',
-    desc: '- N: 가치주 투자자로 저평가된 주식을 선호합니다.',
+    name: 'S',
+    desc: '- S: 가치주 투자자로 저평가된 주식을 선호합니다.',
     desc2: '유럽주식지수(FEZ ETF)',
     link: 'https://youtu.be/AyB-whOxFjE'
   }
