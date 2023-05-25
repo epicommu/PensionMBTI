@@ -19,7 +19,7 @@
 2. main.js는 큰 뼈대. 글 내용 수정 필요할 때 확인해보면 됨.
 
 3. data.js는 퀴즈 질문, 답변에 따른 MBTI 리스트들을 갖고 있는 파일.
-   qnaList: 질문 리스트, infoList: I/E 답변 리스트, infoList2: T/F 답변 리스트, infoList3: S/N 관련된 리스트, infoList4: J/P 답변 리스트, infoList5: S/N 답변 리스트
+- qnaList: 질문 리스트, infoList: I/E 답변 리스트, infoList2: T/F 답변 리스트, infoList3: S/N 관련된 리스트, infoList4: J/P 답변 리스트, infoList5: S/N 답변 리스트
 - I/E: Q1~10 10개의 질문, 각 답변별로 0/10점 부여 -> I : sum(score)<50 / E : sum(score)>=50
 - S/N: Q1~6 6개의 질문, 각 답변별로 0/1점 부여 -> S: sum(score5)<=3 / N : sum(score5)>3
 - T/F: Q11~14 4개의 질문, 각 답변별로 0/1점 부여 -> T : sum(score2)<=2 / F : sum(score2)>2
