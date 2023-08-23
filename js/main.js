@@ -223,7 +223,7 @@ if(hyungu.innerHTML == "당신의 고유 MBTI는... INTJ1001"){
 }  
 
 const hyunguLink1 = document.querySelector(".hyungyuLink1");
-hyunguLink1.setAttribute("href",shopLink);
+hyungyuLink1.setAttribute("href",shopLink);
 
  
   setTimeout(() => {
