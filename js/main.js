@@ -222,7 +222,7 @@ if(hyungu.innerHTML == "당신의 고유 MBTI는... INTJ1001"){
   shopLink = "https://etfpi.cafe24.com/surl/O/1962";
 }  
 
-const hyunguLink1 = document.querySelector(".hyungyuLink1");
+const hyungyuLink1 = document.querySelector(".hyungyuLink1");
 hyungyuLink1.setAttribute("href",shopLink);
 
  
