@@ -9,6 +9,38 @@ const ENDPOINT = 16;
 const select = [];
 let qIdx = -1;
 
+
+var shopLink = "a";
+var shopLink2 = "b";
+
+if(hyungu.innerHTML == "당신의 고유 MBTI는... INTJ1000"){
+  shopLink = "https://etfpi.cafe24.com/surl/O/1961";
+}  
+if(hyungu.innerHTML == "당신의 고유 MBTI는... INTJ1001"){
+  shopLink = "https://etfpi.cafe24.com/surl/O/1962";
+}  
+
+const hyunguLink1 = document.querySelector(".hyungyuLink1");
+hyunguLink1.setAttribute("href", shopLink)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const goTo = (dest) => {
   let elem;
   let elemTop;
