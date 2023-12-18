@@ -1,37 +1,41 @@
 const qnaList = [
   {
-    q: '1. 둘 중 하나만 투자한다면?',
+    q: '1. 나이를 알려주세요',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 비트코인', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 19세 이상', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 19세 미만', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
-    q: '2. 둘 중 하나만 투자한다면?',
+    q: '2. 연 근로소득을 알려주세요',
     a: [
-      { answer: 'a. 미국 국채', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 테슬라', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 없음', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 1,400만원 이하', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 1,400만원 초과 ~ 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 5,000만원 초과 ~ 5,500만원 이하', score: 3, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 5,500만원 초과 ~ 1.2억원 이하', score: 4, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 1.2억원 초과', score: 5, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
-    q: '3. 둘 중 하나만 투자한다면?',
+    q: '3. 연간 금융소득이 2천만원 초과(금융종합소득과세자)에 해당하나요?',
     a: [
-      { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 유가', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 네', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 아니오', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
     q: '4. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. S&P 500', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 나스닥', score: 10, score5: 1, score2: 0, score3: 0, score4: 0 }
+      { answer: 'b. 나스닥', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '5. 둘 중 하나만 투자한다면?',
     a: [
       { answer: 'a. 예금(적금)', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 삼성전자', score: 10, score5: 1, score2: 0, score3: 0, score4: 0 }
+      { answer: 'b. 삼성전자', score: 10, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
