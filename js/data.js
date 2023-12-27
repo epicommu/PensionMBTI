@@ -10,11 +10,11 @@ const qnaList = [
     q: '2. 연 근로소득을 알려주세요',
     a: [
       { answer: 'a. 없음', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1,400만원 이하', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1,400만원 초과 ~ 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 5,000만원 초과 ~ 5,500만원 이하', score: 3, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 5,500만원 초과 ~ 1.2억원 이하', score: 4, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1.2억원 초과', score: 5, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'b. 1,400만원 이하', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 1,400만원 초과 ~ 5,000만원 이하', score: 20, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 5,000만원 초과 ~ 5,500만원 이하', score: 30, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 5,500만원 초과 ~ 1.2억원 이하', score: 40, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 1.2억원 초과', score: 50, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
