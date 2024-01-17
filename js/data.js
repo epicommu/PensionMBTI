@@ -1,13 +1,34 @@
 const qnaList = [
   {
-    q: '1. 나이를 알려주세요',
+    q: '1. 연금저축 계좌가 있나요?',
+    a: [
+      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+    ]
+  },
+  {
+    q: '2. IRP 계좌가 있나요?',
+    a: [
+      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+    ]
+  },
+  {
+    q: '3. ISA 계좌가 있나요?',
+    a: [
+      { answer: 'a. 있음', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 없음', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+    ]
+  },  
+  {
+    q: '4. 나이를 알려주세요',
     a: [
       { answer: 'a. 19세 이상', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 19세 미만', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
-    q: '2. 연 근로소득을 알려주세요',
+    q: '5. 연 근로소득을 알려주세요',
     a: [
       { answer: 'a. 없음', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 1,400만원 이하', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 },
@@ -18,24 +39,10 @@ const qnaList = [
     ]
   },
   {
-    q: '3. 연간 금융소득이 2천만원 초과(금융종합소득과세자)에 해당하나요?',
+    q: '6. 연간 금융소득이 2천만원 초과(금융종합소득과세자)에 해당하나요?',
     a: [
       { answer: 'a. 네', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 아니오', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
-    ]
-  },
-  {
-    q: '4. 둘 중 하나만 투자한다면?',
-    a: [
-      { answer: 'a. S&P 500', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 나스닥', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
-    ]
-  },
-  {
-    q: '5. 둘 중 하나만 투자한다면?',
-    a: [
-      { answer: 'a. 예금(적금)', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 삼성전자', score: 10, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   }
 ]
