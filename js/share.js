@@ -1,4 +1,4 @@
-const url = 'https://lymin0109.github.io/financial_MBTI_test';
+const url = 'https://epiadvisor.github.io/TaxMbti2/';
 const title = '[성향테스트] 나의 투자 MBTI ';
 const hash = '%23투자MBTI %233투자성향테스트 %23성향테스트 ';
 
