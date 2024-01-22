@@ -1,9 +1,20 @@
 // 현재 날짜를 가져옵니다.
 const today = new Date();
 
-// 19세와 15세가 되는 연도를 계산합니다.
+// 19세와 15세가 되는 연도, 월, 일을 계산합니다.
 const yearFor19 = today.getFullYear() - 19;
+const monthFor19 = today.getMonth() + 1; // 월은 0부터 시작하므로 1을 더해줍니다.
+const dayFor19 = today.getDate();
+
 const yearFor15 = today.getFullYear() - 15;
+const monthFor15 = today.getMonth() + 1;
+const dayFor15 = today.getDate();
+
+// 월과 일을 두 자리 숫자로 포맷합니다.
+const formattedMonthFor19 = monthFor19.toString().padStart(2, '0');
+const formattedDayFor19 = dayFor19.toString().padStart(2, '0');
+const formattedMonthFor15 = monthFor15.toString().padStart(2, '0');
+const formattedDayFor15 = dayFor15.toString().padStart(2, '0');
 
 
 const qnaList = [
@@ -15,43 +26,42 @@ const qnaList = [
     ]
   },
   {
-    q: '2. 어느 해에 태어나셨나요?',
+    q: '2. IRP 계좌가 있 태어나셨나요?',
     a: [
-      { answer: `a. 만 19세 이상이 되도록 하는 년월일: ${yearFor19}년 이전`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `b. 15세 이상이 되도록 하는 년월일: ${yearFor15}년 ~ 19세 미만`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `c. 15세 미만이 되도록 하는 년월일: ${yearFor15}년 미만`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '3. ISA 계좌가 있나요?',
     a: [
-      { answer: 'a. 있음', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 없음', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },  
   {
     q: '4. 최근 3년 이내에 금융소득종합과세 대상자였던 적이 있습니까?',
     a: [
-      { answer: 'a. 19세 이상', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 19세 미만', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 예', score: 200, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 아니오', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   },
   {
-    q: '5. 연 근로소득을 알려주세요',
+    q: '5. 생일이 언제이신가요?',
     a: [
-      { answer: 'a. 없음', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1,400만원 이하', score: 10, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1,400만원 초과 ~ 5,000만원 이하', score: 20, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 5,000만원 초과 ~ 5,500만원 이하', score: 30, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 5,500만원 초과 ~ 1.2억원 이하', score: 40, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 1.2억원 초과', score: 50, score2: 0, score3: 0, score4: 0, score5: 0 }
-    ]
+      { answer: `a. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} 이후`, score: 10, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `b. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} ~ ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19}`, score: 20, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `c. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} 이전`, score: 30, score5: 0, score2: 0, score3: 0, score4: 0 }
+  ]
   },
   {
-    q: '6. 연간 금융소득이 2천만원 초과(금융종합소득과세자)에 해당하나요?',
+    q: '6. 정기적인 소득이 있으신가요??',
     a: [
-      { answer: 'a. 네', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 아니오', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 아니오', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'b. 연간 근로소득 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'c. 연간 종합소득 3,800만원 이하', score: 3, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'd. 연간 농어업소득 3,800만원 이하', score: 4, score2: 0, score3: 0, score4: 0, score5: 0 },
+      { answer: 'e. 소득 종류별 위 금액 이상', score: 0, score2: 5, score3: 0, score4: 0, score5: 0 }
     ]
   }
 ]
