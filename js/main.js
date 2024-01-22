@@ -85,34 +85,24 @@ const calcScore5 = () => {
 
 const sortResult = (point) => {
   let num = 0;
-  if (point == 0) {
+  if (point == 125 || point == 115) {
     num = 0;
-  } else if (point == 1) {
+  } else if (point == 231 || point == 221 || point == 131 || point == 121) {
     num = 1;
-  } else if (point == 11) {
-    num = 2;
-  } else if (point == 21) {
-    num = 3;
-  } else if (point == 31) {
-    num = 4;
-  } else if (point == 41) {
-    num = 5;
-  } else if (point == 51) {
-    num = 6;
-  } else if (point == 100) {
-    num = 7;
-  } else if (point == 101) {
-    num = 8;
   } else if (point == 111) {
-    num = 9;
-  } else if (point == 121) {
-    num = 10;
-  } else if (point == 131) {
-    num = 11;
-  } else if (point == 141) {
-    num = 12;
-  } else {
+    num = 2;
+  } else if (point == 123 || point == 122 || point == 113 || point == 112) {
     num = 3;
+  } else if (point == 124 || point == 114) {
+    num = 4;
+  } else if (point == 211) {
+    num = 5;
+  } else if (point == 225 || point == 224 || point == 223 || point == 222 || point == 215 || point == 214 || point == 213 || point == 212) {
+    num = 6;
+  } else if (point == 235 || point == 234 || point == 233 || point == 135 || point == 134 || point == 133 || point == 132) {
+    num = 7;
+  } else {
+    num = 8;
   }
   return num;
 }
