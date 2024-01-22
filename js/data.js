@@ -1,3 +1,11 @@
+// 현재 날짜를 가져옵니다.
+const today = new Date();
+
+// 19세와 15세가 되는 연도를 계산합니다.
+const yearFor19 = today.getFullYear() - 19;
+const yearFor15 = today.getFullYear() - 15;
+
+
 const qnaList = [
   {
     q: '1. 연금저축 계좌가 있나요?',
@@ -7,10 +15,11 @@ const qnaList = [
     ]
   },
   {
-    q: '2. IRP 계좌가 있나요?',
+    q: '2. 어느 해에 태어나셨나요?',
     a: [
-      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: `a. 만 19세 이상이 되도록 하는 년월일: ${yearFor19}년 이전`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `b. 15세 이상이 되도록 하는 년월일: ${yearFor15}년 ~ 19세 미만`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `c. 15세 미만이 되도록 하는 년월일: ${yearFor15}년 미만`, score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
@@ -21,7 +30,7 @@ const qnaList = [
     ]
   },  
   {
-    q: '4. 나이를 알려주세요',
+    q: '4. 최근 3년 이내에 금융소득종합과세 대상자였던 적이 있습니까?',
     a: [
       { answer: 'a. 19세 이상', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 19세 미만', score: 0, score2: 0, score3: 0, score4: 0, score5: 0 }
