@@ -19,21 +19,21 @@ const formattedDayFor15 = dayFor15.toString().padStart(2, '0');
 
 const qnaList = [
   {
-    q: '1. 연금저축 계좌가 있나요?',
+    q: '1. 연금저축 계좌가 있으신가요?',
     a: [
       { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
-    q: '2. IRP 계좌가 있 태어나셨나요?',
+    q: '2. IRP 계좌가 있으신가요?',
     a: [
       { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
-    q: '3. ISA 계좌가 있나요?',
+    q: '3. ISA 계좌가 있으신가요?',
     a: [
       { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
