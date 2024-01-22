@@ -49,13 +49,13 @@ const qnaList = [
   {
     q: '5. 생일이 언제이신가요?',
     a: [
-      { answer: `a. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} 이후`, score: 10, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `b. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} ~ ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19}`, score: 20, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `c. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} 이전`, score: 30, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: `a. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} 이전`, score: 10, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `b. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} ~ ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15}`, score: 20, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: `c. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} 이후`, score: 30, score5: 0, score2: 0, score3: 0, score4: 0 }
   ]
   },
   {
-    q: '6. 정기적인 소득이 있으신가요??',
+    q: '6. 정기적인 소득이 있으신가요?',
     a: [
       { answer: 'a. 아니오', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 연간 근로소득 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
@@ -68,8 +68,7 @@ const qnaList = [
 
 const infoList = [
   {
-    from: 0,
-    to: 0,
+    scores: [125, 115]
     mLeft: '20%',
     name: '당신이 가입 가능한 계좌는…연금저축계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→연금저축(1200만원)',
@@ -81,8 +80,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 1,
-    to: 1,
+    scores: [231, 221, 131, 121]
     mLeft: '40%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→ISA(2000만원)<br><br>→연금저축(1100만원)',
@@ -94,8 +92,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 11,
-    to: 11,
+    scores: [111]
     mLeft: '60%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA, IRP계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→IRP(300만원)<br><br>→ISA(2000만원)<br><br>→연금저축(900만원)',
@@ -107,8 +104,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 21,
-    to: 21,
+    scores: [123, 122, 113, 112]
     mLeft: '80%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA, IRP계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→IRP(300만원)<br><br>→ISA(2000만원)<br><br>→연금저축(900만원)',
@@ -120,8 +116,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 31,
-    to: 31,
+    scores: [124, 114]
     mLeft: '60%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA, IRP계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→IRP(300만원)<br><br>→ISA(2000만원)<br><br>→연금저축(900만원)',
@@ -133,8 +128,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 41,
-    to: 41,
+    scores: [211]
     mLeft: '60%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA, IRP계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→IRP(300만원)<br><br>→ISA(2000만원)<br><br>→연금저축(900만원)',
@@ -146,8 +140,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 51,
-    to: 51,
+    scores: [225, 224, 223, 222, 215,214, 213, 212]
     mLeft: '60%',
     name: '당신이 가입 가능한 계좌는…연금저축, ISA, IRP계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→IRP(300만원)<br><br>→ISA(2000만원)<br><br>→연금저축(900만원)',
@@ -159,8 +152,7 @@ const infoList = [
     desc_3: ' 30%'
   },
   {
-    from: 100,
-    to: 100,
+    scores: [235, 234, 233, 135, 134, 133, 132]
     mLeft: '60%',
     name: '당신이 가입 가능한 계좌는…연금저축계좌',
     name2: '최적 납입단계는 연금저축(600만원)<br><br>→연금저축(1200만원)',
