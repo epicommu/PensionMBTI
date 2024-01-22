@@ -99,6 +99,15 @@
   font-size: 1.1rem;
   font-weight: 350;
 }
+.desc3 {
+  margin: 30px 7.5%;
+  width: 85%;
+  line-height: 28.8px;
+  line-height: 1.8rem;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  font-weight: 350;
+}
 #desc-box ~ p {
   display: inline-block;
   margin-top: 20px;
@@ -297,6 +306,13 @@
     font-size: 19.2px;
     font-size: 1.2rem;
   }
+  .desc3 {
+    margin: 30px 7.5%;
+    line-height: 32px;
+    line-height: 2rem;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+  }
   #share-box {
     margin: 25px 30% 30px 30%;
     width: 40%;
@@ -360,6 +376,10 @@
     font-size: 20.8px;
     font-size: 1.3rem;
   }
+  .desc3 {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+  }
   .go-artist {
     font-size: 17.6px;
     font-size: 1.1rem;
@@ -414,6 +434,14 @@
     font-size: 2.8rem;
   }
   .desc2 {
+    margin: 35px 5% 50px 5%;
+    width: 90%;
+    line-height: 33.6px;
+    line-height: 2.1rem;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+  }
+  .desc3 {
     margin: 35px 5% 50px 5%;
     width: 90%;
     line-height: 33.6px;
