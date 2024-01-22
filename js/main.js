@@ -199,7 +199,6 @@ const goResult = () => {
   const desc = document.querySelector('.res');
   const hyungu = document.querySelector('.hyungu');
   const desc2 = document.querySelector('.res');
-  const desc3 = document.querySelector('.res');
   const desc_1 = document.querySelector('.res');
   const desc_2 = document.querySelector('.res');
   const desc_3 = document.querySelector('.res');
@@ -210,7 +209,6 @@ const goResult = () => {
   res_img.title = infoList[grade].name
   animal.innerHTML = infoList[grade].name  
   desc.innerHTML = infoList[grade].name2
-  desc3.innerHTML = infoList[grade].name3
   res_img2.src = img2_url;
   res_img2.alt = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
   res_img2.title = infoList[grade].name + infoList5[grade5_2].name + infoList2[grade2_2].name + infoList4[grade4_2].name;
