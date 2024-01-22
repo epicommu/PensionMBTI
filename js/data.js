@@ -40,7 +40,7 @@ const qnaList = [
     ]
   },  
   {
-    q: '4. 최근 3년 이내에 금융소득종합과세 대상자였던 적이 있습니까?',
+    q: '4. 최근 3년 이내에 금융소득종합과세 대상자였나요?',
     a: [
       { answer: 'a. 예', score: 200, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'b. 아니오', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 }
