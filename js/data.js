@@ -61,7 +61,7 @@ const qnaList = [
       { answer: 'b. 연간 근로소득 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'c. 연간 종합소득 3,800만원 이하', score: 3, score2: 0, score3: 0, score4: 0, score5: 0 },
       { answer: 'd. 연간 농어업소득 3,800만원 이하', score: 4, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'e. 소득 종류별 위 금액 이상', score: 0, score2: 5, score3: 0, score4: 0, score5: 0 }
+      { answer: 'e. 소득 종류별 위 금액 이상', score: 5, score2: 0, score3: 0, score4: 0, score5: 0 }
     ]
   }
 ]
