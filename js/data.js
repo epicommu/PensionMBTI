@@ -17,6 +17,8 @@ const formattedMonthFor15 = monthFor15.toString().padStart(2, '0');
 const formattedDayFor15 = dayFor15.toString().padStart(2, '0');
 
 
+
+
 const qnaList = [
   {
     q: '1. 저축의 목적은 얼마인가요?',
@@ -57,6 +59,46 @@ const qnaList = [
     ]
   }
 ]
+
+function calculateInvestmentOutcome(qnaList) {
+  // 사용자의 선택에 따른 값 추출 (여기서는 첫 번째 답변을 기본값으로 사용)
+  const annualInvestment = qnaList[2].a[0].score3 * 10000; // 연간 납입 금액 (만원 단위로 변환)
+  const investmentYears = qnaList[1].a[0].score2; // 투자 기간
+  const annualInterestRate = qnaList[3].a[0].score4 / 100; // 연수익률 (퍼센트를 소수로 변환)
+
+  // 복리 계산을 위한 초기 설정
+  let futureValue = 0;
+
+  // 매년 복리 계산
+  for (let year = 1; year <= investmentYears; year++) {
+    futureValue += annualInvestment;
+    futureValue *= (1 + annualInterestRate);
+  }
+
+  // 원금 총액
+  const totalInvestment = annualInvestment * investmentYears;
+
+  // 수익금 계산
+  const earnings = futureValue - totalInvestment;
+
+  // 원금 대비 수익률 계산
+  const returnRate = (earnings / totalInvestment) * 100;
+
+  return {
+    futureValue: futureValue.toFixed(2),
+    totalInvestment: totalInvestment.toFixed(2),
+    earnings: earnings.toFixed(2),
+    returnRate: returnRate.toFixed(2)
+  };
+}
+
+// 사용 예시
+const outcome = calculateInvestmentOutcome(qnaList);
+console.log(`최종 금액: ${outcome.futureValue}원, 원금: ${outcome.totalInvestment}원, 수익금: ${outcome.earnings}원, 원금 대비 수익률: ${outcome.returnRate}%`);
+
+
+
+
 
 const infoList = [
   {
