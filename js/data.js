@@ -19,49 +19,41 @@ const formattedDayFor15 = dayFor15.toString().padStart(2, '0');
 
 const qnaList = [
   {
-    q: '1. 연금저축 계좌가 있으신가요?',
+    q: '1. 저축의 목적은 얼마인가요?',
     a: [
-      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 1,000만원', score: 1000, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 5,000만원', score: 5000, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'c. 1억', score: 10000, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'd. 5억', score: 50000, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'e. 10억', score: 100000, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
-    q: '2. IRP 계좌가 있으신가요?',
+    q: '2. 저축 계획 기간은 얼마인가요?',
     a: [
-      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 3년', score: 0, score5: 0, score2: 3, score3: 0, score4: 0 },
+      { answer: 'b. 5년', score: 0, score5: 0, score2: 5, score3: 0, score4: 0 },
+      { answer: 'c. 10년', score: 0, score5: 0, score2: 10, score3: 0, score4: 0 },
+      { answer: 'd. 20년', score: 0, score5: 0, score2: 20, score3: 0, score4: 0 },
+      { answer: 'b. 30년', score: 0, score5: 0, score2: 30, score3: 0, score4: 0 }
     ]
   },
   {
-    q: '3. ISA 계좌가 있으신가요?',
+    q: '3. 납입 계획 금액은 연간 얼마인가요?',
     a: [
-      { answer: 'a. 있다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: 'b. 없다', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 연 240만원(월 20만원)', score: 0, score5: 0, score2: 0, score3: 20, score4: 0 },
+      { answer: 'b. 연 600만원(월 50만원)', score: 0, score5: 0, score2: 0, score3: 50, score4: 0 },
+      { answer: 'c. 연 1,200만원(월 100만원', score: 0, score5: 0, score2: 0, score3: 100, score4: 0 },
+      { answer: 'd. 연 3,600만원(월 300만원)', score: 0, score5: 0, score2: 0, score3: 300, score4: 0 },
+      { answer: 'e. 연 6,000만원(월 500만원)', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },  
   {
-    q: '4. 최근 3년 이내에 금융소득종합과세 대상자였나요?',
+    q: '4. 다음 중 어떤 자산에 투자하실건가요?',
     a: [
-      { answer: 'a. 예', score: 200, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 아니오', score: 100, score2: 0, score3: 0, score4: 0, score5: 0 }
-    ]
-  },
-  {
-    q: '5. 생일이 언제이신가요?',
-    a: [
-      { answer: `a. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} 이전`, score: 10, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `b. ${yearFor19}-${formattedMonthFor19}-${formattedDayFor19} ~ ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15}`, score: 20, score5: 0, score2: 0, score3: 0, score4: 0 },
-      { answer: `c. ${yearFor15}-${formattedMonthFor15}-${formattedDayFor15} 이후`, score: 30, score5: 0, score2: 0, score3: 0, score4: 0 }
-  ]
-  },
-  {
-    q: '6. 정기적인 소득이 있으신가요?',
-    a: [
-      { answer: 'a. 아니오', score: 1, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'b. 연간 근로소득 5,000만원 이하', score: 2, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'c. 연간 종합소득 3,800만원 이하', score: 3, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'd. 연간 농어업소득 3,800만원 이하', score: 4, score2: 0, score3: 0, score4: 0, score5: 0 },
-      { answer: 'e. 소득 종류별 위 금액 이상', score: 5, score2: 0, score3: 0, score4: 0, score5: 0 }
+      { answer: 'a. 미국 주식', score: 0, score2: 0, score3: 0, score4: 17.9, score5: 0 },
+      { answer: 'a. 기술주', score: 0, score2: 0, score3: 0, score4: 17.89, score5: 0 },
+      { answer: 'b. 코스피 200', score: 0, score2: 0, score3: 0, score4: 7.04, score5: 0 }
     ]
   }
 ]
