@@ -241,21 +241,6 @@ const goResult = () => {
   const desc_3 = document.querySelector('.res');
   const res_img2 = document.createElement('img');
   const Link1 = document.querySelector('.Link1');
-  // 유효성 검사 후 결과 표시
-  const showResult = (grade) => {
-    if (infoList[grade] && infoList5[grade5_2] && infoList2[grade2_2] && infoList4[grade4_2]) {
-      // 유효한 결과를 사용하여 DOM 업데이트
-      animal.innerHTML = infoList[grade].name;
-      desc.innerHTML = infoList[grade].name2;
-      Link1.innerHTML = infoList[grade].name3;
-      // 나머지 코드...
-    } else {
-      console.error('Invalid grade or index out of bound.');
-      // 적절한 오류 처리 또는 기본값 설정
-    }
-  };
-
-  showResult(grade);
 
   
   res_img.alt = infoList[grade].name
