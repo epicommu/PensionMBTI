@@ -1,3 +1,9 @@
+/* 결과의 특정 부분을 가리기위한 임시서식 */
+.result.title, .res.desc, .hyungu {
+  display: none;
+}
+
+
 /* result로 넘어갈 때 display: block; */
 #result {
   display: none;
