@@ -53,9 +53,9 @@ const qnaList = [
   {
     q: '4. 다음 중 어떤 자산에 투자하실건가요?',
     a: [
-      { answer: 'a. 미국 S&P500', score: 17.9, score2: 0, score3: 0, score4: 17.9, score5: 0 },
-      { answer: 'a. 미국 나스닥', score: 17.89, score2: 0, score3: 0, score4: 17.89, score5: 0 },
-      { answer: 'b. 코스피 200', score: 7.04, score2: 0, score3: 0, score4: 7.04, score5: 0 }
+      { answer: 'a. 미국 S&P500', score: 0.179, score2: 0, score3: 0, score4: 17.9, score5: 0 },
+      { answer: 'a. 미국 나스닥', score: 0.1789, score2: 0, score3: 0, score4: 17.89, score5: 0 },
+      { answer: 'b. 코스피 200', score: 0.0704, score2: 0, score3: 0, score4: 7.04, score5: 0 }
     ]
   }
 ]
