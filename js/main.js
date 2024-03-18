@@ -56,12 +56,16 @@ const calcFutureValue = () => {
   let pmoney = getScore(2);  // 두 번째 선택에 대한 결과 저장
   let passet = getScore(3);  // 세 번째 선택에 대한 결과 저장
 
+  // 변수의 타입과 값 확인을 위한 로그 출력
+  console.log(typeof pperiod, pperiod);  // "number", 3
+  console.log(typeof pmoney, pmoney);    // "number", 600
+  console.log(typeof passet, passet);    // "number", 0.179
+
   // 연간 수익률(passet), 연간 납입 금액(pmoney), 기간(pperiod)을 사용하여 미래 가치 계산
   let resultm = pmoney * ((Math.pow(1 + passet, pperiod) - 1) / passet);
 
   return resultm;
 };
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const resultm = calcFutureValue(); // 계산 함수 호출
