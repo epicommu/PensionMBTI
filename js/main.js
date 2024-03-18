@@ -65,18 +65,11 @@ const calcFutureValue = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const resultm = calcFutureValue(); // 계산 함수 호출
-  const resultText = `당신의 투자 결과 금액은 ${resultm.toFixed(2)}만원 입니다.`; // 결과 메시지 포맷
+  const resultText = `당신의 투자 결과 금액은 ${resultm.toFixed(2)}만원 입니다.`;
 
-  // 결과 메시지를 담을 새로운 <p> 요소 생성
-  const resultParagraph = document.createElement('p');
-  resultParagraph.className = 'result title'; // 스타일 지정을 위한 클래스 할당
-  resultParagraph.innerText = resultText;
-
-  // 'desc-box' 요소 찾기
-  const descBox = document.getElementById('desc-box');
-
-  // 'desc-box'의 부모 요소에 새로운 <p> 요소를 'desc-box' 바로 앞에 삽입
-  descBox.parentNode.insertBefore(resultParagraph, descBox);
+  // 'resultText' 요소의 내용을 업데이트
+  const resultElement = document.getElementById('resultText');
+  resultElement.innerText = resultText;
 });
 
 
