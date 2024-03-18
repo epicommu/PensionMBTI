@@ -43,6 +43,17 @@ const copy = () => {
   document.body.removeChild(tmp);
 }
 
+const calcFutureValue = () => {
+  let pperiod = qnaList[0].a[select[0]].score; // 첫 번째 선택에 대한 결과 저장
+  let pmoney = qnaList[1].a[select[1]].score;  // 두 번째 선택에 대한 결과 저장
+  let passet = qnaList[2].a[select[2]].score;  // 세 번째 선택에 대한 결과 저장
+
+  // 연간 수익률(passet), 연간 납입 금액(pmoney), 기간(pperiod)을 사용하여 미래 가치 계산
+  let resultm = pmoney * ((Math.pow(1 + passet, pperiod) - 1) / passet);
+
+  return resultm;
+}
+
 const calcScore = () => {
   let point = 0;
   for (let i = 0; i < ENDPOINT; i++) {
