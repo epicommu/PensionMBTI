@@ -33,29 +33,29 @@ const qnaList = [
   {
     q: '2. 저축 계획 기간은 얼마인가요?',
     a: [
-      { answer: 'a. 3년', score: 0, score5: 0, score2: 3, score3: 0, score4: 0 },
-      { answer: 'b. 5년', score: 0, score5: 0, score2: 5, score3: 0, score4: 0 },
-      { answer: 'c. 10년', score: 0, score5: 0, score2: 10, score3: 0, score4: 0 },
-      { answer: 'd. 20년', score: 0, score5: 0, score2: 20, score3: 0, score4: 0 },
-      { answer: 'b. 30년', score: 0, score5: 0, score2: 30, score3: 0, score4: 0 }
+      { answer: 'a. 3년', score: 3, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 5년', score: 5, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'c. 10년', score: 10, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'd. 20년', score: 20, score5: 0, score2: 0, score3: 0, score4: 0 },
+      { answer: 'b. 30년', score: 30, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },
   {
     q: '3. 납입 계획 금액은 연간 얼마인가요?',
     a: [
-      { answer: 'a. 연 240만원(월 20만원)', score: 0, score5: 0, score2: 0, score3: 20, score4: 0 },
-      { answer: 'b. 연 600만원(월 50만원)', score: 0, score5: 0, score2: 0, score3: 50, score4: 0 },
-      { answer: 'c. 연 1,200만원(월 100만원', score: 0, score5: 0, score2: 0, score3: 100, score4: 0 },
-      { answer: 'd. 연 3,600만원(월 300만원)', score: 0, score5: 0, score2: 0, score3: 300, score4: 0 },
-      { answer: 'e. 연 6,000만원(월 500만원)', score: 0, score5: 0, score2: 0, score3: 0, score4: 0 }
+      { answer: 'a. 연 240만원(월 20만원)', score: 240, score5: 0, score2: 0, score3: 20, score4: 0 },
+      { answer: 'b. 연 600만원(월 50만원)', score: 600, score5: 0, score2: 0, score3: 50, score4: 0 },
+      { answer: 'c. 연 1,200만원(월 100만원', score: 1200, score5: 0, score2: 0, score3: 100, score4: 0 },
+      { answer: 'd. 연 3,600만원(월 300만원)', score: 3600, score5: 0, score2: 0, score3: 300, score4: 0 },
+      { answer: 'e. 연 6,000만원(월 500만원)', score: 6000, score5: 0, score2: 0, score3: 0, score4: 0 }
     ]
   },  
   {
     q: '4. 다음 중 어떤 자산에 투자하실건가요?',
     a: [
-      { answer: 'a. 미국 주식', score: 0, score2: 0, score3: 0, score4: 17.9, score5: 0 },
-      { answer: 'a. 기술주', score: 0, score2: 0, score3: 0, score4: 17.89, score5: 0 },
-      { answer: 'b. 코스피 200', score: 0, score2: 0, score3: 0, score4: 7.04, score5: 0 }
+      { answer: 'a. 미국 S&P500', score: 17.9, score2: 0, score3: 0, score4: 17.9, score5: 0 },
+      { answer: 'a. 미국 나스닥', score: 17.89, score2: 0, score3: 0, score4: 17.89, score5: 0 },
+      { answer: 'b. 코스피 200', score: 7.04, score2: 0, score3: 0, score4: 7.04, score5: 0 }
     ]
   }
 ]
