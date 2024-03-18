@@ -62,8 +62,8 @@ const calcFutureValue = () => {
   console.log(typeof passet, passet);    // "number", 0.179
   console.log(`Selected answers: ${select}`); // 선택된 답변 인덱스 출력
   console.log(`pperiod: ${pperiod}, pmoney: ${pmoney}, passet: ${passet}`); // 계산된 값 출력
-  console.log("passet value check:", qnaList[3].a[select[3]].score);
-  console.log("passet value check2:", qnaList[1].a[select[1]].score);
+  console.log("select[3] value:", select[3]);
+  console.log("qnaList[3].a length:", qnaList[3].a.length);
 
 
   // 연간 수익률(passet), 연간 납입 금액(pmoney), 기간(pperiod)을 사용하여 미래 가치 계산
