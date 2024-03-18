@@ -81,7 +81,7 @@
   height: 100%;
   object-fit: contain;
 }
-.desc, .result.title {
+.desc, #resultText {
   margin: 30px 7.5%;
   width: 85%;
   line-height: 28.8px;
@@ -292,7 +292,7 @@
   .art2 {
     max-height: 1500px;
   }
-  .desc, .result.title {
+  .desc, #resultText {
     margin: 30px 7.5%;
     line-height: 32px;
     line-height: 2rem;
@@ -368,7 +368,7 @@
     width: 90%;
     max-height: 2000px;
   }
-  .desc, .result.title {
+  .desc, #resultText {
     font-size: 20.8px;
     font-size: 2.6rem;
   }
@@ -425,7 +425,7 @@
   .art2 {
     max-height: 2000px;
   }
-  .desc, .result.title {
+  .desc, #resultText {
     margin: 35px 5% 50px 5%;
     width: 90%;
     line-height: 33.6px;
