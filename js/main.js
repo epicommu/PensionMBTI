@@ -44,16 +44,24 @@ const copy = () => {
 }
 
 const calcFutureValue = () => {
-  let pnone = qnaList[0].a[select[0]].score; // 영향을미치지않는 변수
-  let pperiod = qnaList[1].a[select[1]].score; // 첫 번째 선택에 대한 결과 저장
-  let pmoney = qnaList[2].a[select[2]].score;  // 두 번째 선택에 대한 결과 저장
-  let passet = qnaList[3].a[select[3]].score;  // 세 번째 선택에 대한 결과 저장
+  // 각 변수에 대한 점수를 안전하게 가져오는 함수
+  const getScore = (index) => {
+    const choice = select[index];
+    const question = qnaList[index];
+    return question && question.a[choice] ? question.a[choice].score : 0;
+  };
+
+  let pnone = getScore(0); // 영향을 미치지 않는 변수
+  let pperiod = getScore(1); // 첫 번째 선택에 대한 결과 저장
+  let pmoney = getScore(2);  // 두 번째 선택에 대한 결과 저장
+  let passet = getScore(3);  // 세 번째 선택에 대한 결과 저장
 
   // 연간 수익률(passet), 연간 납입 금액(pmoney), 기간(pperiod)을 사용하여 미래 가치 계산
   let resultm = pmoney * ((Math.pow(1 + passet, pperiod) - 1) / passet);
 
   return resultm;
-}
+};
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const resultm = calcFutureValue(); // 계산 함수 호출
@@ -233,6 +241,22 @@ const goResult = () => {
   const desc_3 = document.querySelector('.res');
   const res_img2 = document.createElement('img');
   const Link1 = document.querySelector('.Link1');
+  // 유효성 검사 후 결과 표시
+  const showResult = (grade) => {
+    if (infoList[grade] && infoList5[grade5_2] && infoList2[grade2_2] && infoList4[grade4_2]) {
+      // 유효한 결과를 사용하여 DOM 업데이트
+      animal.innerHTML = infoList[grade].name;
+      desc.innerHTML = infoList[grade].name2;
+      Link1.innerHTML = infoList[grade].name3;
+      // 나머지 코드...
+    } else {
+      console.error('Invalid grade or index out of bound.');
+      // 적절한 오류 처리 또는 기본값 설정
+    }
+  };
+
+  showResult(grade);
+
   
   res_img.alt = infoList[grade].name
   res_img.title = infoList[grade].name
