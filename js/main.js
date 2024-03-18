@@ -121,28 +121,10 @@ const calcScore5 = () => {
 }
 
 const sortResult = (point) => {
-  let num = 0;
-  if (point == 125 || point == 115) {
-    num = 0;
-  } else if (point == 231 || point == 221 || point == 131 || point == 121) {
-    num = 1;
-  } else if (point == 111) {
-    num = 2;
-  } else if (point == 123 || point == 122 || point == 113 || point == 112) {
-    num = 3;
-  } else if (point == 124 || point == 114) {
-    num = 4;
-  } else if (point == 211) {
-    num = 5;
-  } else if (point == 225 || point == 224 || point == 223 || point == 222 || point == 215 || point == 214 || point == 213 || point == 212) {
-    num = 6;
-  } else if (point == 235 || point == 234 || point == 233 || point == 135 || point == 134 || point == 133 || point == 132) {
-    num = 7;
-  } else {
-    num = 8;
-  }
+  let num = 1; // num을 항상 1로 설정
   return num;
 }
+
 
 const sortResult2 = (point2) => {
   let num2 = 1;
