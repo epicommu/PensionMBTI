@@ -72,6 +72,13 @@ const calcFutureValue = () => {
   return resultm;
 };
 
+document.getElementById('resultButton').addEventListener('click', () => {
+  const resultm = calcFutureValue(); // 계산 함수 호출
+  const resultText = `당신의 투자 결과 금액은 ${resultm.toFixed(2)}만원 입니다.`;
+  const resultElement = document.getElementById('resultText');
+  resultElement.innerText = resultText;
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const resultm = calcFutureValue(); // 계산 함수 호출
   const resultText = `당신의 투자 결과 금액은 ${resultm.toFixed(2)}만원 입니다.`;
