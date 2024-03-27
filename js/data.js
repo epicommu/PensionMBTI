@@ -21,7 +21,7 @@ const formattedDayFor15 = dayFor15.toString().padStart(2, '0');
 
 const qnaList = [
   {
-    q: '1. 저축의 목적은 얼마인가요?',
+    q: '1. 저축의 목표금액은 얼마인가요?',
     a: [
       { answer: 'a. 1,000만원', score: 1000, score5: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 5,000만원', score: 5000, score5: 0, score2: 0, score3: 0, score4: 0 },
