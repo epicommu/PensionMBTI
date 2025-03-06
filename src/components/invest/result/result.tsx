@@ -1,12 +1,14 @@
 import { InvestSurveyContext } from '@/shared/context/survey';
 import styles from './result.module.css';
 import { InvestScores } from '@/shared/types/survey';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { getMbtiLink } from './csvReader';
 
 export const Result = () => {
   const scores = useContext(InvestSurveyContext);
+  const [userEmail, setUserEmail] = useState<string | null>(null);
 
+  // ✅ MBTI 결과 계산 함수
   const calcResult = (scores: InvestScores | null) => {
     if (!scores) return '';
     const { s1, s2, s3, s4, s5 } = scores;
@@ -35,9 +37,53 @@ export const Result = () => {
 
   const result = calcResult(scores);
   const link = getMbtiLink(result);
+
+  // ✅ 1. 로그인 여부 확인
+  useEffect(() => {
+    async function checkLoginStatus() {
+      try {
+        const response = await fetch("https://api.imweb.me/v2/user", {
+          method: "GET",
+          headers: { "Authorization": "Bearer YOUR_API_KEY" }, // 🔹 아임웹 REST API 키 입력 필요
+        });
+
+        const data = await response.json();
+        setUserEmail(data.email || null);
+      } catch (error) {
+        console.error("로그인 상태 확인 실패:", error);
+      }
+    }
+
+    checkLoginStatus();
+  }, []);
+
+  // ✅ 2. MBTI 결과 저장하기 버튼 동작
+  async function saveMBTI() {
+    if (!result) {
+      alert("테스트 결과를 먼저 확인해주세요!");
+      return;
+    }
+
+    if (!userEmail) {
+      // 🔹 로그인 안 된 경우 → 회원가입 페이지로 이동
+      alert("회원가입이 필요합니다! 가입 후 결과가 자동 저장됩니다.");
+      window.location.href = `https://your-imweb-site.com/signup?mbti=${result}`;
+    } else {
+      // 🔹 로그인한 경우 → 즉시 저장
+      await fetch("https://your-api.com/save-mbti", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: userEmail, mbti: result }),
+      });
+
+      alert("MBTI 결과가 저장되었습니다!");
+    }
+  }
+
   const handleClickLink = () => {
     window.open(link);
   };
+
   return (
     <section className={styles['result']}>
       <div className={styles['result-box']}>
@@ -46,6 +92,13 @@ export const Result = () => {
           당신의 투자 MBTI 결과와 추천 포트폴리오를 찾았습니다.
           <p className={styles['sub']}>▼ 아래 클릭 ▼</p>
         </div>
+
+        {/* ✅ "저장하기" 버튼 추가 */}
+        <button className={styles['result-button']} onClick={saveMBTI}>
+          MBTI 결과 저장하기
+        </button>
+
+        {/* 기존 버튼 (결과 보러 가기) 유지 */}
         <button className={styles['result-button']} onClick={handleClickLink}>
           결과 보러 가기
         </button>
